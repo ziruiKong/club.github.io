@@ -4010,6 +4010,521 @@ h3 {
   margin-top: 36px;
 }
 
+.squad-cards-body {
+  background: #03070f;
+}
+
+.squad-cards-page {
+  position: relative;
+  overflow: hidden;
+  min-height: 100vh;
+  padding-bottom: 84px;
+  color: #f8fbff;
+  background:
+    radial-gradient(circle at 12% 20%, rgba(255, 72, 128, 0.18), transparent 30%),
+    radial-gradient(circle at 86% 10%, rgba(77, 184, 255, 0.24), transparent 28%),
+    radial-gradient(circle at 56% 86%, rgba(255, 197, 89, 0.14), transparent 34%),
+    linear-gradient(135deg, #03070f 0%, #071a33 48%, #150917 100%);
+  isolation: isolate;
+}
+
+.squad-cards-page::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  opacity: 0.34;
+  pointer-events: none;
+  background-image:
+    radial-gradient(circle at 20% 30%, rgba(255, 255, 255, 0.5) 0 1px, transparent 1px),
+    radial-gradient(circle at 70% 72%, rgba(255, 255, 255, 0.34) 0 1px, transparent 1px),
+    linear-gradient(115deg, rgba(255, 255, 255, 0.08), transparent 42%, rgba(255, 255, 255, 0.05));
+  background-size: 19px 19px, 31px 31px, 100% 100%;
+  mix-blend-mode: screen;
+}
+
+.squad-cards-hero {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 220px;
+  gap: 32px;
+  width: min(1500px, calc(100% - 48px));
+  margin: 0 auto;
+  padding: 122px 0 46px;
+}
+
+.squad-cards-hero-copy p,
+.squad-card-section-head p,
+.squad-cards-hero-panel span,
+.squad-cards-hero-panel small {
+  margin: 0;
+  color: rgba(248, 251, 255, 0.68);
+  font: 900 12px/1 Arial, sans-serif;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.squad-cards-hero-copy h1 {
+  margin: 12px 0 0;
+  max-width: 920px;
+  color: #fff;
+  font-size: clamp(58px, 9vw, 142px);
+  line-height: 0.82;
+  text-transform: uppercase;
+  text-shadow: 0 28px 80px rgba(77, 184, 255, 0.24);
+}
+
+.squad-cards-hero-panel {
+  align-self: end;
+  position: relative;
+  overflow: hidden;
+  min-height: 180px;
+  padding: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  border-radius: 8px;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.18), rgba(255, 255, 255, 0.06));
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.36), inset 0 1px 0 rgba(255, 255, 255, 0.24);
+  backdrop-filter: blur(18px) saturate(1.2);
+}
+
+.squad-cards-hero-panel strong {
+  display: block;
+  margin-top: 28px;
+  color: #fff;
+  font-size: 76px;
+  line-height: 0.78;
+}
+
+.squad-cards-hero-panel small {
+  display: block;
+  margin-top: 14px;
+}
+
+.squad-orbit {
+  position: absolute;
+  z-index: -1;
+  border-radius: 999px;
+  filter: blur(4px);
+  opacity: 0.7;
+  pointer-events: none;
+  animation: squadOrbit 11s ease-in-out infinite alternate;
+}
+
+.squad-orbit-one {
+  top: 94px;
+  right: 12%;
+  width: 260px;
+  height: 260px;
+  border: 1px solid rgba(91, 200, 255, 0.24);
+  box-shadow: inset 0 0 44px rgba(91, 200, 255, 0.24), 0 0 70px rgba(255, 88, 144, 0.2);
+}
+
+.squad-orbit-two {
+  bottom: 16px;
+  left: 8%;
+  width: 340px;
+  height: 160px;
+  border: 1px solid rgba(255, 205, 107, 0.24);
+  transform: rotate(-10deg);
+  animation-delay: -4s;
+}
+
+.squad-cards-tabs {
+  position: sticky;
+  top: 82px;
+  z-index: 20;
+  width: min(1500px, calc(100% - 48px));
+  margin: 0 auto 38px;
+  padding: 14px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(3, 7, 15, 0.72);
+  backdrop-filter: blur(18px);
+}
+
+.squad-cards-tabs a {
+  color: rgba(248, 251, 255, 0.62);
+  font-weight: 900;
+}
+
+.squad-cards-tabs a.is-active,
+.squad-cards-tabs a:hover {
+  color: #fff;
+}
+
+.squad-cards-tabs a.is-active::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: -15px;
+  left: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #ff6496, #6496ff, #ffc864);
+}
+
+.squad-card-section {
+  width: min(1500px, calc(100% - 48px));
+  margin: 0 auto;
+  padding: 36px 0 54px;
+}
+
+.squad-card-section-head {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: 24px;
+}
+
+.squad-card-section-head h2 {
+  margin: 0;
+  color: #fff;
+  font-size: clamp(26px, 3vw, 48px);
+  line-height: 0.94;
+  text-transform: uppercase;
+}
+
+.noise-squad-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.noise-player-frame {
+  --mx: 50%;
+  --my: 50%;
+  --rx: 0deg;
+  --ry: 0deg;
+  position: relative;
+  min-height: 432px;
+  overflow: hidden;
+  padding: 2px;
+  border-radius: 8px;
+  color: #fff;
+  background:
+    radial-gradient(circle at var(--mx) var(--my), rgba(255, 255, 255, 0.92), transparent 0 8%, transparent 30%),
+    conic-gradient(from 120deg at 50% 50%, #ff6496, #6496ff, #ffc864, #5eead4, #ff6496);
+  box-shadow: 0 20px 58px rgba(0, 0, 0, 0.38);
+  transform: perspective(900px) rotateX(var(--rx)) rotateY(var(--ry)) translateY(0);
+  transform-style: preserve-3d;
+  transition: transform 180ms ease, box-shadow 180ms ease, filter 180ms ease;
+}
+
+.noise-player-frame::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  opacity: 0.54;
+  pointer-events: none;
+  background-image:
+    radial-gradient(circle at 20% 30%, rgba(255, 255, 255, 0.72) 0 1px, transparent 1px),
+    radial-gradient(circle at 70% 60%, rgba(0, 0, 0, 0.42) 0 1px, transparent 1px);
+  background-size: 11px 11px, 17px 17px;
+  mix-blend-mode: overlay;
+  animation: noiseDrift 900ms steps(2) infinite;
+}
+
+.noise-player-frame::after {
+  content: "";
+  position: absolute;
+  inset: 2px;
+  z-index: 2;
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  border-radius: 6px;
+  pointer-events: none;
+}
+
+.noise-player-frame:hover {
+  box-shadow: 0 28px 82px rgba(76, 183, 255, 0.24), 0 12px 60px rgba(255, 72, 128, 0.18);
+  filter: saturate(1.08);
+}
+
+.noise-player-card {
+  position: relative;
+  height: 100%;
+  min-height: 428px;
+  overflow: hidden;
+  border-radius: 6px;
+  background:
+    radial-gradient(circle at var(--mx) var(--my), rgba(255, 255, 255, 0.24), transparent 0 18%, transparent 46%),
+    radial-gradient(circle at 18% 18%, rgba(255, 100, 150, 0.2), transparent 32%),
+    radial-gradient(circle at 85% 8%, rgba(100, 150, 255, 0.22), transparent 28%),
+    linear-gradient(155deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.03) 34%, rgba(0, 0, 0, 0.32)),
+    linear-gradient(145deg, #111927, #07111f 58%, #1c0914);
+  transform: translateZ(0);
+}
+
+.noise-player-card::before,
+.noise-player-card::after {
+  content: "";
+  position: absolute;
+  pointer-events: none;
+}
+
+.noise-player-card::before {
+  inset: 18px 18px 122px;
+  border-radius: 8px;
+  background:
+    linear-gradient(115deg, rgba(255, 255, 255, 0.18), transparent 46%),
+    radial-gradient(circle at 50% 24%, rgba(255, 255, 255, 0.18), transparent 34%);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  box-shadow: inset 0 0 42px rgba(255, 255, 255, 0.08);
+}
+
+.noise-player-card::after {
+  top: var(--my);
+  left: var(--mx);
+  width: 170px;
+  height: 170px;
+  border-radius: 999px;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.34), transparent 64%);
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 160ms ease;
+}
+
+.noise-player-frame:hover .noise-player-card::after {
+  opacity: 1;
+}
+
+.keeper-card .noise-player-card {
+  background:
+    radial-gradient(circle at var(--mx) var(--my), rgba(255, 255, 255, 0.24), transparent 0 18%, transparent 46%),
+    radial-gradient(circle at 18% 18%, rgba(255, 216, 80, 0.22), transparent 32%),
+    radial-gradient(circle at 84% 12%, rgba(94, 234, 212, 0.22), transparent 28%),
+    linear-gradient(145deg, #10181f, #10283f 58%, #2a1b04);
+}
+
+.noise-player-photo {
+  position: absolute;
+  inset: 30px 18px 100px;
+  display: grid;
+  place-items: end center;
+  overflow: hidden;
+}
+
+.noise-player-photo::before {
+  content: "";
+  position: absolute;
+  right: 14%;
+  bottom: 6%;
+  left: 14%;
+  height: 36%;
+  border-radius: 999px;
+  background: radial-gradient(ellipse, rgba(100, 150, 255, 0.32), transparent 68%);
+  filter: blur(10px);
+}
+
+.noise-player-photo img {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center bottom;
+  filter: drop-shadow(0 24px 28px rgba(0, 0, 0, 0.42)) saturate(1.06);
+  transform: translateZ(44px) scale(0.98);
+  transition: transform 220ms ease, filter 220ms ease;
+}
+
+.cordero-noise-card .noise-player-photo img {
+  object-position: center top;
+  transform: translateY(-24px) translateZ(44px) scale(0.9);
+}
+
+.noise-player-frame:hover .noise-player-photo img {
+  filter: drop-shadow(0 30px 34px rgba(0, 0, 0, 0.5)) saturate(1.14) contrast(1.03);
+  transform: translateZ(58px) scale(1.03);
+}
+
+.cordero-noise-card:hover .noise-player-photo img {
+  transform: translateY(-24px) translateZ(58px) scale(0.94);
+}
+
+.noise-number {
+  position: absolute;
+  right: 18px;
+  bottom: 122px;
+  z-index: 5;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: clamp(56px, 6vw, 86px);
+  font-weight: 900;
+  line-height: 0.8;
+  text-shadow: 0 18px 42px rgba(0, 0, 0, 0.44);
+}
+
+.noise-flag {
+  top: 18px;
+  right: 18px;
+  width: 34px;
+  height: 34px;
+  z-index: 6;
+  border-color: rgba(255, 255, 255, 0.82);
+}
+
+.noise-role {
+  position: absolute;
+  top: 18px;
+  left: 18px;
+  z-index: 6;
+  display: grid;
+  place-items: center;
+  min-width: 36px;
+  height: 36px;
+  padding: 0 8px;
+  border: 1px solid rgba(255, 255, 255, 0.32);
+  border-radius: 6px;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.12);
+  font: 900 12px/1 Arial, sans-serif;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  backdrop-filter: blur(14px);
+}
+
+.noise-role.wide {
+  min-width: 62px;
+}
+
+.noise-player-glass {
+  position: absolute;
+  right: 14px;
+  bottom: 14px;
+  left: 14px;
+  z-index: 8;
+  min-height: 96px;
+  padding: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.24);
+  border-radius: 8px;
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.22), rgba(255, 255, 255, 0.08)),
+    radial-gradient(circle at var(--mx) var(--my), rgba(255, 255, 255, 0.28), transparent 38%);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.28), 0 18px 38px rgba(0, 0, 0, 0.24);
+  backdrop-filter: blur(18px) saturate(1.24);
+}
+
+.noise-player-glass span {
+  display: block;
+  color: rgba(255, 255, 255, 0.62);
+  font: 900 10px/1 Arial, sans-serif;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.noise-player-glass h3 {
+  margin: 9px 0 0;
+  max-width: calc(100% - 54px);
+  color: #fff;
+  font-size: clamp(22px, 2vw, 30px);
+  line-height: 0.92;
+  text-transform: uppercase;
+}
+
+.is-muted .noise-player-photo img {
+  filter: grayscale(0.86) saturate(0.3) drop-shadow(0 24px 28px rgba(0, 0, 0, 0.42));
+}
+
+.is-muted .noise-number {
+  color: rgba(255, 255, 255, 0.38);
+}
+
+.squad-cards-footer {
+  margin-top: 0;
+}
+
+@keyframes noiseDrift {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+
+  50% {
+    transform: translate3d(-1%, 1%, 0);
+  }
+
+  100% {
+    transform: translate3d(1%, -1%, 0);
+  }
+}
+
+@keyframes squadOrbit {
+  from {
+    transform: translate3d(0, 0, 0) rotate(0deg);
+  }
+
+  to {
+    transform: translate3d(20px, -12px, 0) rotate(8deg);
+  }
+}
+
+@media (max-width: 1180px) {
+  .noise-squad-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 820px) {
+  .squad-cards-hero {
+    grid-template-columns: 1fr;
+    padding-top: 110px;
+  }
+
+  .squad-cards-hero-panel {
+    min-height: 132px;
+  }
+
+  .squad-cards-hero-panel strong {
+    margin-top: 18px;
+    font-size: 56px;
+  }
+
+  .squad-cards-tabs {
+    top: 70px;
+    width: 100%;
+    padding: 14px 24px;
+    overflow-x: auto;
+  }
+
+  .squad-card-section-head {
+    display: block;
+  }
+
+  .squad-card-section-head h2 {
+    margin-top: 8px;
+  }
+
+  .noise-squad-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .noise-player-frame {
+    min-height: 388px;
+  }
+
+  .noise-player-card {
+    min-height: 384px;
+  }
+}
+
+@media (max-width: 560px) {
+  .squad-cards-hero,
+  .squad-card-section {
+    width: calc(100% - 28px);
+  }
+
+  .noise-squad-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .noise-player-frame {
+    min-height: 430px;
+  }
+
+  .noise-player-card {
+    min-height: 426px;
+  }
+}
+
 .store-page {
   background: #f6f8fb;
   color: var(--navy);

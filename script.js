@@ -1959,6 +1959,33 @@ renderPlayerTemplate();
 renderMatchTemplate();
 renderLineupTemplate();
 
+const liquidNoiseCards = Array.from(document.querySelectorAll("[data-noise-card]"));
+
+liquidNoiseCards.forEach((card) => {
+  const resetNoiseCard = () => {
+    card.style.setProperty("--mx", "50%");
+    card.style.setProperty("--my", "50%");
+    card.style.setProperty("--rx", "0deg");
+    card.style.setProperty("--ry", "0deg");
+  };
+
+  card.addEventListener("pointermove", (event) => {
+    const rect = card.getBoundingClientRect();
+    const x = ((event.clientX - rect.left) / rect.width) * 100;
+    const y = ((event.clientY - rect.top) / rect.height) * 100;
+    const rotateY = (x - 50) * 0.12;
+    const rotateX = (50 - y) * 0.1;
+
+    card.style.setProperty("--mx", `${x.toFixed(2)}%`);
+    card.style.setProperty("--my", `${y.toFixed(2)}%`);
+    card.style.setProperty("--rx", `${rotateX.toFixed(2)}deg`);
+    card.style.setProperty("--ry", `${rotateY.toFixed(2)}deg`);
+  });
+
+  card.addEventListener("pointerleave", resetNoiseCard);
+  card.addEventListener("blur", resetNoiseCard);
+});
+
 function formatNewsDate(value) {
   const date = new Date(`${value}T00:00:00`);
   if (Number.isNaN(date.getTime())) return value;
