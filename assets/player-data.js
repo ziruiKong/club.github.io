@@ -65,6 +65,7 @@ window.TOPS_PLAYER_DATA = [
     "flag": "assets/nl_1x1.svg",
     "photo": "assets/sven-botman.webp",
     "age": "26",
+    "birthDate": "12 Jan 2000",
     "stats": {
       "appearances": 43,
       "goals": 1,
@@ -615,7 +616,7 @@ window.TOPS_PLAYER_DATA = [
     "positionShort": "FWD",
     "nationality": "Croatia",
     "flag": "assets/hr_1x1.svg",
-    "photo": "assets/toni-fruk.webp",
+    "photo": "assets/toni-fruk.png",
     "age": "26",
     "stats": {
       "appearances": 33,

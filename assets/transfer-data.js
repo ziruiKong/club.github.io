@@ -35,11 +35,11 @@ window.TOPS_TRANSFER_DATA = {
         { date: "05/07", playerId: "charalampos-kostoulas", player: "Charalampos Kostoulas", from: "Brighton", fee: "EUR31.5m", weeklyWage: "EUR80,000", contract: "4 years" },
         { date: "05/07", playerId: "archie-gray", player: "Archie Gray", from: "Tottenham", fee: "EUR44.0m", weeklyWage: "EUR80,000", contract: "4 years" },
         { date: "29/07", playerId: "tyler-dibling", player: "Tyler Dibling", from: "Everton", fee: "EUR42.0m", weeklyWage: "EUR94,000", contract: "4 years" },
-        { date: "09/08", playerId: "ferran-torres", player: "Ferran Torres", from: "Inter (LOM)", fee: "EUR100.8m", weeklyWage: "EUR230,000", contract: "5 years" },
+        { date: "09/08", playerId: "ferran-torres", player: "Ferran Torres", from: "Inter", fee: "EUR100.8m", weeklyWage: "EUR230,000", contract: "5 years" },
         { date: "09/08", playerId: "pau-cubarsi", player: "Pau Cubarsi", from: "Barcelona", fee: "EUR81.8m", weeklyWage: "EUR150,000", contract: "5 years" },
         { date: "09/08", playerId: "martin-zubimendi", player: "Martin Zubimendi", from: "Arsenal", fee: "EUR93.5m", weeklyWage: "EUR220,000", contract: "5 years" },
         { date: "31/08", playerId: "sven-botman", player: "Sven Botman", from: "Newcastle", fee: "EUR64.0m", weeklyWage: "EUR220,000", contract: "5 years" },
-        { date: "31/08", playerId: "elias-baum", player: "Elias Baum", from: "Inter (LOM)", fee: "EUR28.6m", weeklyWage: "EUR73,000", contract: "4 years" },
+        { date: "31/08", playerId: "elias-baum", player: "Elias Baum", from: "Inter", fee: "EUR28.6m", weeklyWage: "EUR73,000", contract: "4 years" },
         { date: "11/09", playerId: "marc-bernal", player: "Marc Bernal", from: "Barcelona", fee: "EUR20.0m", weeklyWage: "EUR80,000", contract: "4 years" }
       ],
       academyPromotions: [
