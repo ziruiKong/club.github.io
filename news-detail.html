@@ -1,0 +1,571 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Welsh: The Details Will Decide Our Next Step | TOPS</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700;900&family=Cinzel:wght@700;800;900&family=DM+Sans:wght@400;500;600;700;800;900&family=Libre+Caslon+Display&display=swap" rel="stylesheet">
+  <style>
+    :root{--ink:#071426;--navy:#101f3a;--burgundy:#6f1f2c;--warm:#f1ece2;--paper:#faf8f3;--line:#101f3a18;--gold:#c6a35b}
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--paper);color:var(--ink);font-family:"DM Sans",sans-serif}
+    a{color:inherit;text-decoration:none}
+    .rail{position:fixed;z-index:9;inset:0 auto 0 0;width:200px;background:var(--burgundy);color:var(--warm);border-right:2px solid var(--gold);display:flex;flex-direction:column}
+    .rail-brand{display:grid;place-items:center;width:100%;padding:42px 24px 38px;margin:0 0 40px;background:var(--navy);border-bottom:2px solid var(--gold)}
+    .tops-wordmark{display:block;width:126px;line-height:0}.tops-wordmark img{display:block;width:100%;height:auto}
+    .rail nav{display:flex;flex-direction:column;gap:18px;padding:0 24px;font:700 22px/1.06 "Libre Caslon Display",Georgia,serif;letter-spacing:-.025em}.rail nav a:hover,.rail nav a.active,.rail nav a.is-submenu-active{color:var(--gold)}
+    .rail-submenu{position:fixed;z-index:8;top:0;bottom:0;left:200px;width:min(620px,calc(100vw - 200px));background:#f8f5ee;color:var(--navy);border:1px solid var(--burgundy);border-left-width:2px;padding:118px 40px 42px;opacity:0;transform:translateX(-18px);pointer-events:none;transition:opacity .28s ease,transform .28s ease}
+    body.submenu-open .rail-submenu{opacity:1;transform:translateX(0);pointer-events:auto}.rail-submenu-kicker{margin:0 0 30px;font-size:10px;font-weight:800;letter-spacing:.22em;text-transform:uppercase;color:var(--burgundy)}.rail-submenu-list{margin:0;padding:0;list-style:none;border-top:1px solid #101f3a18}.rail-submenu-list a{display:flex;align-items:center;justify-content:space-between;gap:34px;padding:28px 0;border-bottom:1px solid #101f3a18;font:clamp(34px,4.2vw,58px)/.95 "Libre Caslon Display",Georgia,serif;letter-spacing:-.035em}.rail-submenu-list a:after{content:">";font-family:Georgia,serif;font-size:.82em;transition:transform .2s ease}.rail-submenu-list a:hover{color:var(--burgundy)}.rail-submenu-list a:hover:after{transform:translateX(6px)}
+    .page{margin-left:200px;min-height:100vh;background:#fff}
+    .article-hero{position:relative;min-height:min(68vw,820px);display:grid;align-items:end;overflow:hidden;background:#071426;color:#fff}
+    .article-hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center center;display:block}
+    .article-hero:after{content:"";position:absolute;left:0;right:0;bottom:0;height:42%;background:linear-gradient(180deg,rgba(7,20,38,0) 0%,rgba(7,20,38,.36) 28%,rgba(7,20,38,.78) 100%);backdrop-filter:blur(7px);-webkit-backdrop-filter:blur(7px);mask-image:linear-gradient(180deg,transparent 0%,#000 30%);-webkit-mask-image:linear-gradient(180deg,transparent 0%,#000 30%)}
+    .hero-copy{position:relative;z-index:1;width:calc(100% - clamp(48px,7vw,120px));margin:0 auto;padding:0 0 48px;text-shadow:0 4px 18px rgba(7,20,38,.55)}
+    .hero-copy h1{max-width:none;margin:0;color:#fff;font:900 clamp(32px,4.2vw,68px)/.98 "DM Sans",sans-serif;letter-spacing:-.045em;text-transform:uppercase;text-wrap:balance}
+    .hero-copy p{margin:18px 0 0;color:#f1ece2;font-size:11px;font-weight:900;letter-spacing:.12em;text-transform:uppercase}
+    .article-body{width:min(720px,calc(100% - 64px));margin:0 auto;padding:54px 0 78px}
+    .byline{display:flex;justify-content:space-between;gap:24px;margin:0 0 30px;color:var(--navy);font-size:11px;font-weight:900;text-transform:uppercase;letter-spacing:.06em}
+    .share{display:flex;align-items:center;gap:8px;color:#6f7786}.share span:not(:first-child){display:grid;place-items:center;width:18px;height:18px;border-radius:50%;background:var(--burgundy);color:#fff;font-size:9px}
+    .article-body p{margin:0 0 19px;color:#283246;font-size:18px;line-height:1.66;font-weight:500}.article-body h2{margin:44px 0 18px;color:var(--navy);font:900 30px/1.04 "Cinzel","DM Sans",sans-serif;text-transform:uppercase;letter-spacing:.02em}.article-body blockquote{margin:26px 0;padding:0 0 0 24px;border-left:4px solid var(--burgundy);color:var(--navy);font-size:20px;font-weight:800;line-height:1.48}.article-body strong{color:var(--navy);font-weight:900}
+    .related{background:var(--burgundy);color:#fff;padding:36px clamp(26px,4.2vw,70px) 46px;overflow:hidden}
+    .related h2{margin:0 0 22px;color:#fff;font:900 clamp(30px,3.2vw,52px)/.9 "Cinzel Decorative","Cinzel",serif;text-transform:uppercase}
+    .related-row{display:flex;gap:16px;overflow-x:auto;overflow-y:hidden;scroll-snap-type:x proximity;padding-bottom:8px}
+    .related-row::-webkit-scrollbar{height:8px}.related-row::-webkit-scrollbar-track{background:#ffffff18}.related-row::-webkit-scrollbar-thumb{background:#ffffff55;border-radius:999px}
+    .related-card{position:relative;flex:0 0 calc((100% - 48px)/4);min-width:220px;min-height:178px;display:flex;align-items:end;overflow:hidden;background:#111;scroll-snap-align:start}
+    .related-card img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .3s ease}
+    .related-card:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 25%,rgba(7,20,38,.86) 100%)}
+    .related-card div{position:relative;z-index:1;padding:16px}.related-card h3{margin:0;color:#fff;font-size:17px;line-height:1.08;letter-spacing:-.02em}.related-card p{margin:10px 0 0;color:#f1ece2;font-size:10px;font-weight:800;text-transform:uppercase}
+    .related-card:hover img{transform:scale(1.04)}
+    footer{height:300px;background:#020936;color:#f1ece2;overflow:hidden;display:flex;align-items:center}.tops-pattern{width:100%;overflow:hidden}.tops-pattern-track{display:flex;align-items:center;gap:76px;width:max-content;animation:topsMarquee 24s linear infinite}.tops-pattern-item{display:flex;align-items:center;gap:.16em;white-space:nowrap;color:#f1ece2;font:italic clamp(128px,13.8vw,228px)/.78 Georgia,serif;letter-spacing:-.065em;text-transform:uppercase}.tops-pattern-item img{width:.86em;height:.86em;object-fit:contain;display:block;transform:translateY(-.015em)}@keyframes topsMarquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+    @media(max-width:760px){.rail,.rail-submenu{display:none}.page{margin-left:0}.article-hero{min-height:620px}.hero-copy{width:calc(100% - 48px);padding-bottom:38px}.article-body{width:calc(100% - 48px);padding:42px 0 62px}.article-body p{font-size:16px}.byline{display:block}.share{margin-top:14px}.related-card{flex-basis:250px;min-width:250px}}
+  </style>
+</head>
+<body>
+  <aside class="rail">
+    <a class="rail-brand" href="index.html#top" aria-label="TOPS home"><span class="tops-wordmark"><img src="assets/sidebar-sculpture-logo.webp" alt="TOPS"></span></a>
+    <nav><a class="active" href="news.html">News</a><a href="index.html#fixtures" data-menu="matches">Matches</a><a href="mens-first-team.html" data-menu="teams">Teams</a><a href="index.html#tickets" data-menu="tickets">Tickets</a><a href="index.html#membership" data-menu="membership">Membership</a><a href="index.html#shop" data-menu="shop">Shop IFC</a><a href="index.html#play" data-menu="play">IFC PLAY</a><a href="index.html#club" data-menu="club">The Club</a><a href="index.html#latest" data-menu="explore">Explore</a></nav>
+  </aside>
+  <aside class="rail-submenu" aria-hidden="true"><p class="rail-submenu-kicker">Teams</p><ul class="rail-submenu-list"></ul></aside>
+  <main class="page">
+    <article>
+      <header class="article-hero">
+        <img id="story-image" src="assets/conner-welsh.png" alt="">
+        <div class="hero-copy">
+          <h1 id="story-title">Welsh: The details will decide our next step</h1>
+          <p id="story-meta">Men's Team | 31 Jan 2029</p>
+        </div>
+      </header>
+      <section class="article-body">
+        <div class="byline"><span>By Islington Football Club</span><span class="share"><span>Share</span><span>f</span><span>x</span><span>in</span><span>@</span></span></div>
+        <div id="story-body"></div>
+      </section>
+    </article>
+    <section class="related">
+      <h2>Related News</h2>
+      <div class="related-row">
+        <a class="related-card" href="news-detail.html?story=next-england-generation"><img src="assets/next-england-generation.png" alt=""><div><h3>NEXT England Generation Project launches</h3><p>15 Mar 2029</p></div></a>
+        <a class="related-card" href="news-detail.html?story=thank-you-captain-white"><img src="assets/thank-you-captain-white.png" alt=""><div><h3>Thank you, Captain White</h3><p>1 Jul 2028</p></div></a>
+        <a class="related-card" href="news-detail.html?story=thank-you-carmona"><img src="assets/thank-you-carmona.png" alt=""><div><h3>Thank you, Jos&eacute; Carmona</h3><p>31 Jan 2029</p></div></a>
+        <a class="related-card" href="news-detail.html?story=thank-you-zubimendi"><img src="assets/thank-you-zubimendi.png" alt=""><div><h3>Thank you, Mart&iacute;n Zubimendi</h3><p>31 Jan 2029</p></div></a>
+        <a class="related-card" href="news-detail.html?story=fernandez-joins"><img src="assets/enzo-fernandez-welcome.png" alt=""><div><h3>Welcome to Islington, Enzo Fernández</h3><p>31 Jan 2029</p></div></a>
+      </div>
+    </section>
+    <footer><div class="tops-pattern" aria-label="TOPS brand pattern"><div class="tops-pattern-track"><span class="tops-pattern-item">TOPS <img src="assets/islington-hat-cream-transparent.webp" alt=""></span><span class="tops-pattern-item">TOPS <img src="assets/islington-hat-cream-transparent.webp" alt=""></span><span class="tops-pattern-item">TOPS <img src="assets/islington-hat-cream-transparent.webp" alt=""></span><span class="tops-pattern-item">TOPS <img src="assets/islington-hat-cream-transparent.webp" alt=""></span><span class="tops-pattern-item">TOPS <img src="assets/islington-hat-cream-transparent.webp" alt=""></span><span class="tops-pattern-item">TOPS <img src="assets/islington-hat-cream-transparent.webp" alt=""></span></div></div></footer>
+  </main>
+  <script>
+    const stories = {
+      'next-england-generation': {
+        title: 'Islington FC launches NEXT England Generation Project',
+        meta: 'Club News | 15 Mar 2029',
+        image: 'assets/next-england-generation.png',
+        body: [
+          "<h2>Wycliffe Group unveils ambitious vision to build the next generation of English football</h2>",
+          "<strong>3/15/2029</strong>",
+          "Islington Football Club and the Wycliffe Group today officially announced the launch of the club's new long-term football development strategy, the <strong>NEXT England Generation Project</strong>.",
+          "The project represents a major commitment from the club to develop and integrate more elite English talent into the first-team structure, with the long-term objective of building a squad where around 50% of first-team players are English-qualified.",
+          "<h2>A new identity for a new era</h2>",
+          "Since the Wycliffe Group's arrival, Islington FC has rapidly transformed itself into one of Europe's most ambitious football institutions.",
+          "Through global recruitment, advanced scouting and significant investment, the club has assembled a squad capable of competing for every major honour, culminating in historic domestic and European success.",
+          "However, Chairman Edward Wycliffe believes that the next stage of Islington's evolution requires a stronger connection with its English roots.",
+          "<blockquote>We have built a club capable of competing with the best in Europe.</blockquote>",
+          "<blockquote>Now we want to build something that represents where we come from, a club with a global vision, but an unmistakable English identity.</blockquote>",
+          "<h2>The NEXT England Generation Project</h2>",
+          "The initiative will focus on three major pillars.",
+          "<h2>1. Developing England's future stars</h2>",
+          "Islington will increase investment in elite English youth recruitment, Premier League academy scouting, England youth international pathways and individual development programmes for young players.",
+          "The club's ambition is not simply to sign English players, but to develop future leaders capable of representing both Islington and England at the highest level.",
+          "<h2>2. A stronger academy-to-first-team pathway</h2>",
+          "The Wycliffe Group will continue expanding Islington's academy operations, creating a clearer route from youth football to the senior squad.",
+          "The club aims to establish an environment where the next generation of English talents can grow alongside world-class international players.",
+          "<h2>3. Building a balanced squad model</h2>",
+          "Islington will continue recruiting globally, maintaining its reputation as a destination for elite football talent.",
+          "The future squad philosophy will be built around:",
+          "<blockquote>English foundation x Global excellence</blockquote>",
+          "A squad that combines local identity with international quality.",
+          "<h2>Following the legacy of English leaders</h2>",
+          "The announcement comes after a historic period for the club, led by figures such as former captain Ben White, whose leadership helped define Islington's first golden era.",
+          "During his time at the club, White was part of the generation that delivered:",
+          "<blockquote>2026/27 Carabao Cup<br>2026/27 Premier League Title<br>2027/28 FA Cup<br>2027/28 Carabao Cup<br>2027/28 Premier League Title<br>2027/28 UEFA Champions League</blockquote>",
+          "Wycliffe believes that future English players must inherit the same responsibility.",
+          "<blockquote>Players like Ben White showed that English players can lead on the biggest stages.</blockquote>",
+          "<blockquote>The next generation must not only wear the shirt, they must define what this club stands for.</blockquote>",
+          "<h2>The future starts now</h2>",
+          "The NEXT England Generation Project marks the beginning of a new chapter in Islington FC's history.",
+          "The club will continue competing for trophies, attracting world-class talent and pushing the boundaries of modern football while creating a stronger connection between Islington and English football.",
+          "<blockquote>Our ambition is not just to build a successful team.</blockquote>",
+          "<blockquote>Our ambition is to build a football institution that lasts for generations.</blockquote>",
+          "The next generation begins now.",
+          "<strong>The future is Islington.</strong>"
+        ]
+      },
+      'thank-you-captain-white': {
+        title: 'Thank you, Captain White',
+        meta: 'Club News | 1 Jul 2028',
+        image: 'assets/thank-you-captain-white.png',
+        body: [
+          "<h2>Islington Football Club bids farewell to a historic leader</h2>",
+          "<strong>1 July 2028</strong>",
+          "Islington Football Club can confirm that <strong>Ben White</strong> will leave the club, bringing an end to an unforgettable three-year chapter defined by leadership, commitment and historic success.",
+          "Since arriving at Islington in 2025, White has become one of the most important figures in the club's modern era. More than just a defender, he grew into a leader on and off the pitch, eventually earning the captain's armband and guiding the team through some of the greatest moments in its history.",
+          "White joined Islington as part of the club's ambitious project to establish itself among Europe's elite. From his first appearance, his consistency, intelligence and professionalism quickly made him a trusted figure within the squad.",
+          "<h2>A captain for a new era</h2>",
+          "During the <strong>2026/27 season</strong>, White played a crucial role as Islington secured its first major honours, lifting both the <strong>Carabao Cup</strong> and the <strong>Premier League title</strong>.",
+          "His defensive stability and leadership became a foundation for a team entering a new era of success.",
+          "The following campaign, <strong>2027/28</strong>, saw White lead the club to an extraordinary <strong>quadruple</strong>, winning the <strong>Premier League, FA Cup, Carabao Cup and UEFA Champions League</strong>.",
+          "As captain, he represented the mentality and standards that defined one of the greatest seasons in Islington's history.",
+          "<h2>The numbers</h2>",
+          "Across three seasons in North London, White made:",
+          "<blockquote>149 appearances<br>7 goals<br>1 assist<br>48 clean sheets</blockquote>",
+          "Beyond the statistics, his influence was measured through his presence in the dressing room, his dedication in training and his ability to set the example for those around him.",
+          "<h2>White on his departure</h2>",
+          "Speaking about his departure, White said:",
+          "<blockquote>It has been an honour to represent Islington. When I joined this club, I believed in the vision and the journey ahead. To experience these moments with my teammates and the supporters has been something I will never forget.</blockquote>",
+          "<blockquote>Winning trophies is special, but the memories, the people and the connection with this club will always mean the most. Islington will always have a place in my heart.</blockquote>",
+          "<h2>Wycliffe pays tribute</h2>",
+          "Chairman Edward Wycliffe added:",
+          "<blockquote>Ben represents everything we want Islington to stand for. Leadership, professionalism and commitment. He was not only a great player, but a captain who helped shape the identity of this club.</blockquote>",
+          "<blockquote>The trophies will remain forever in our history, but so will the example he set every day.</blockquote>",
+          "From lifting the first league title, to leading the club on the biggest stage in European football, White's legacy will forever be connected with Islington's rise.",
+          "<strong>Three seasons. Four trophies. One captain.</strong>",
+          "Thank you for everything, Ben.",
+          "<strong>Once Islington. Always Islington.</strong>"
+        ]
+      },
+      'thank-you-carmona': {
+        title: 'Thank you, Jos\u00e9 Carmona',
+        meta: 'Transfers | 31 Jan 2029',
+        image: 'assets/thank-you-carmona.png',
+        body: [
+          "Islington Football Club can confirm that <strong>Jos\u00e9 Carmona has completed his transfer to Arsenal, bringing an end to his memorable spell in North London.</strong>",
+          "The Spanish right-back departs Islington after two seasons of outstanding service, joining Arsenal in the 2028/29 season for a transfer fee of <strong>&euro;61.4 million</strong>.",
+          "Carmona arrived at Islington from West Ham United in the summer of 2027 for <strong>&euro;37 million</strong>, becoming one of the club's key defensive additions during its rise to the top of English football.",
+          "Since joining the club, the Spanish defender has made <strong>55 appearances</strong>, contributing <strong>2 goals and 3 assists</strong> while establishing himself as a reliable and versatile presence on the right side of the defence.",
+          "His defensive awareness, athletic ability and consistency made him an important part of the squad's success.",
+          "<h2>A historic quadruple winner</h2>",
+          "The highlight of Carmona's Islington career came during the historic <strong>2028/29 season</strong>, when the club achieved an unprecedented <strong>quadruple</strong>, winning the <strong>Premier League, UEFA Champions League, FA Cup and Carabao Cup</strong>.",
+          "As a trusted member of the first-team squad, Carmona played a valuable role throughout the campaign, providing quality performances as a right-back option and helping the team compete across all competitions.",
+          "<h2>Carmona on his move</h2>",
+          "Speaking after completing his move, Carmona said:",
+          "<blockquote>I am extremely grateful for my time at Islington. This club gave me unforgettable memories, including being part of a historic season that will always be remembered. I want to thank my teammates, the staff and every supporter for their belief and support.</blockquote>",
+          "Islington Football Club would like to thank Jos\u00e9 Carmona for his professionalism, commitment and contribution to one of the greatest chapters in the club's history.",
+          "From West Ham arrival to a historic quadruple winner, Jos\u00e9 leaves Islington as a champion.",
+          "<strong>Thank you, Jos\u00e9.</strong>",
+          "<strong>Once Islington, always part of the story.</strong>"
+        ]
+      },
+      'thank-you-zubimendi': {
+        title: 'Thank you, Mart\u00edn Zubimendi',
+        meta: 'Transfers | 31 Jan 2029',
+        image: 'assets/thank-you-zubimendi.png',
+        body: [
+          "<h2>A four-time champion. A midfield master. An Islington legend.</h2>",
+          "Islington Football Club can confirm that <strong>Mart\u00edn Zubimendi has completed his transfer to Manchester United during the January 2029 transfer window.</strong>",
+          "After 18 unforgettable months in North London, the Spanish midfielder leaves Islington as one of the defining figures of the club's modern era.",
+          "Zubimendi joined Islington from Arsenal in the summer of <strong>2027</strong>, arriving as one of Europe's most highly regarded defensive midfielders. The club secured his signature for <strong>&euro;82.0 million</strong>, with the midfielder signing a long-term contract worth <strong>&euro;195,000 per week</strong>.",
+          "From the moment he arrived, Zubimendi became the heartbeat of Islington's midfield.",
+          "Calm under pressure, exceptional in possession and tactically outstanding, he quickly established himself as the anchor of a team built around control, intelligence and technical excellence.",
+          "<h2>A historic season. A historic legacy.</h2>",
+          "The <strong>2028/29 season</strong> will forever remain one of the greatest chapters in Islington Football Club's history.",
+          "With Zubimendi operating as the team's first-choice defensive midfielder, Islington achieved an unprecedented <strong>Four-Trophy campaign</strong>, winning:",
+          "<blockquote>Premier League<br>UEFA Champions League<br>FA Cup<br>Carabao Cup</blockquote>",
+          "As the foundation of the midfield, Zubimendi played a crucial role throughout the historic campaign.",
+          "His ability to protect the defence, dictate the rhythm of matches and provide stability during the biggest moments made him one of the key reasons behind Islington's success.",
+          "He was not simply a player in the squad.",
+          "He was one of the players who defined the era.",
+          "<h2>The numbers behind the legacy</h2>",
+          "During his time at Islington, Zubimendi made:",
+          "<blockquote>57 appearances<br>9 goals<br>14 assists<br>15 clearances<br>7.47 average rating</blockquote>",
+          "His best individual campaign came in the historic <strong>2027/28 season</strong>, when he recorded:",
+          "<blockquote>46 appearances<br>8 goals<br>13 assists<br>7.55 average rating</blockquote>",
+          "In the first half of the 2028/29 season, despite the demands of competing across multiple competitions, he continued to deliver elite performances:",
+          "<blockquote>11 appearances<br>1 goal<br>1 assist<br>7.20 average rating</blockquote>",
+          "<h2>From signing to symbol</h2>",
+          "When Zubimendi arrived in North London, expectations were enormous.",
+          "He was expected to bring balance and maturity to a young, ambitious Islington squad.",
+          "He delivered far more.",
+          "His leadership, professionalism and consistency made him a respected figure inside the dressing room and among supporters.",
+          "Whether controlling possession in Champions League nights, protecting narrow leads in crucial league fixtures, or providing composure during the biggest matches of the season, Zubimendi represented the identity Islington wanted to build.",
+          "<h2>A new challenge awaits</h2>",
+          "Following the conclusion of negotiations, Zubimendi has completed his move to Manchester United for a reported fee of <strong>&euro;164.2 million</strong>.",
+          "The transfer represents one of the largest departures in Islington's history and reflects the extraordinary value created during his time at the club.",
+          "The move also marks the beginning of a new chapter for a player who has already achieved legendary status in North London.",
+          "<h2>Thank you, Mart\u00edn</h2>",
+          "Some players arrive at a club.",
+          "Others become part of its history.",
+          "Mart\u00edn Zubimendi arrived as an elite midfielder.",
+          "He leaves as a <strong>Premier League champion, Champions League winner, and four-time trophy winner in Islington colours.</strong>",
+          "He helped transform ambition into achievement.",
+          "He helped write history.",
+          "Everyone at Islington Football Club would like to thank Mart\u00edn for his commitment, professionalism and unforgettable contribution.",
+          "We wish him and his family every success in the future.",
+          "<strong>Thank you, Mart\u00edn Zubimendi.</strong>",
+          "<strong>Forever a champion. Forever part of Islington.</strong>"
+        ]
+      },
+      'welsh-details': {
+        title: 'Welsh: The details will decide our next step',
+        meta: "Men's Team | 31 Jan 2029",
+        image: 'assets/conner-welsh.png',
+        body: [
+          "Conner Welsh believes Islington's winter work has left the first-team group better balanced for the decisive months ahead.",
+          "The head coach has welcomed three new arrivals into the senior squad while also stressing that the club's standards will continue to be set by daily training, tactical clarity and the ability to make small details matter under pressure.",
+          "\"We have added quality, but quality only counts when it becomes part of the collective,\" Welsh said. \"The players understand that. The group has been calm, focused and very open to the work.\"",
+          "Welsh also praised the players who have left the club during the window, describing the decisions as part of a wider squad-building process rather than isolated moves.",
+          "Islington return to league action with a refreshed squad and a clear emphasis on rhythm, patience and collective responsibility."
+        ]
+      },
+      'fernandez-joins': {
+        title: 'Welcome to Islington, Enzo Fernández',
+        meta: 'Transfers | 31 Jan 2029',
+        image: 'assets/enzo-fernandez-welcome.png',
+        body: [
+          "Islington Football Club is delighted to confirm the signing of <strong>Enzo Fernández from Chelsea</strong> in a transfer worth <strong>€109.6 million</strong>.",
+          "The Argentina international has agreed personal terms worth <strong>€260,000 per week</strong> and joins Islington during the <strong>2028/29 season</strong>, adding elite-level quality, experience and leadership to the club's midfield.",
+          "The arrival of Fernández represents a major statement of ambition from Islington. Already established as one of the most accomplished midfielders of his generation, the Argentine arrives in North London after several seasons in English football and is expected to become a central figure in the next stage of the club's development.",
+          "<h2>An elite midfielder arrives in North London</h2>",
+          "Fernández has built his reputation through his technical quality, passing range and ability to dictate the rhythm of matches from midfield.",
+          "Comfortable receiving the ball under pressure, he is capable of progressing possession through short combinations, switching play over longer distances and delivering incisive passes into the final third. His intensity without the ball, tactical intelligence and willingness to take responsibility in possession have also made him an influential presence throughout his senior career.",
+          "Although often deployed as a deep-lying midfielder, Fernández is capable of performing several different roles. He can operate at the base of midfield, play as a progressive No. 8 or move into more advanced areas when his team requires an additional creative presence.",
+          "That versatility was a significant factor in Islington's pursuit of the player.",
+          "The club believes Fernández will offer greater control in possession while helping connect the defensive and attacking phases of the team. His ability to accelerate the tempo of a match, or slow it down when required, will provide the coaching staff with an important tactical option during the decisive stages of the season.",
+          "<h2>From River Plate to Europe</h2>",
+          "Born in Argentina, Fernández developed within the academy system at <strong>River Plate</strong>, one of South America's most historic clubs.",
+          "After progressing through the youth ranks, he gained valuable senior experience during a successful spell with Defensa y Justicia before returning to River Plate and establishing himself in the first team.",
+          "His performances in Argentina attracted attention from across Europe, and he subsequently joined Benfica. Fernández adapted quickly to European football, impressing with his composure, energy and maturity in midfield.",
+          "His time in Portugal proved brief but highly influential. Strong domestic and European performances accelerated his rise, and he later completed a major transfer to Chelsea.",
+          "In England, Fernández gained extensive experience in one of the world's most demanding leagues. He regularly demonstrated his capacity to control possession against aggressive pressing systems and developed into a more complete midfielder through the intensity of Premier League competition.",
+          "He now begins a new chapter with Islington.",
+          "<h2>A World Cup-winning presence</h2>",
+          "Fernández's international career has also played an important role in his development.",
+          "He became a key member of the Argentina national team and was part of the squad that won the <strong>2022 FIFA World Cup</strong>. His performances during the tournament established him on the global stage and underlined his ability to contribute in the highest-pressure matches.",
+          "The midfielder's composure, tactical discipline and progressive passing became important features of Argentina's successful campaign.",
+          "That experience will now be brought into an Islington squad competing for major honours.",
+          "Fernández arrives not only with exceptional technical ability, but also with an understanding of what is required to succeed in tournament football, title races and high-profile matches. His leadership and competitive mentality are expected to benefit both the club's established players and the younger members of the first-team squad.",
+          "<h2>A landmark agreement</h2>",
+          "Following negotiations between Islington and Chelsea, the two clubs reached an agreement valued at <strong>€109.6 million</strong>.",
+          "Fernández subsequently completed the required formalities and agreed a weekly salary of <strong>€260,000</strong> before finalising his move to North London.",
+          "The scale of the agreement reflects the importance of the player within Islington's long-term sporting project.",
+          "The recruitment department had identified central midfield as an area in which the squad could be strengthened with a player capable of influencing matches immediately. Fernández emerged as the leading target because of his age, experience and suitability for the club's playing model.",
+          "Islington considers the signing to be both an immediate reinforcement and a long-term investment in the quality of the first team.",
+          "<h2>Built for Islington's midfield</h2>",
+          "Fernández is expected to provide Islington with greater authority in central areas.",
+          "His ability to receive possession from defenders will help the team construct attacks from deeper positions, while his vision and passing range should allow Islington to move the ball more efficiently through opposition lines.",
+          "He is also comfortable playing alongside different types of midfield partners.",
+          "When positioned next to a defensive specialist, Fernández can move higher and contribute more regularly around the penalty area. When paired with a more advanced midfielder, he can remain deeper and assume responsibility for the initial phases of possession.",
+          "His arrival therefore gives the coaching staff several possible midfield structures.",
+          "Fernández's experience in English football should also reduce the time required for adaptation. He is already familiar with the speed, physicality and tactical demands of the domestic game and will be expected to compete for a place in the starting line-up immediately.",
+          "<h2>Fernández on joining Islington</h2>",
+          "Speaking after completing the move, Fernández said:",
+          "<blockquote>I'm very happy to become an Islington player. This is an ambitious club with a clear vision, and I believe this is the right project for the next stage of my career.</blockquote>",
+          "<blockquote>The conversations with the club were very positive. They explained how they want the team to play, the role they see for me and what they want to achieve in the coming seasons.</blockquote>",
+          "<blockquote>I have enjoyed my time in English football and learned a lot from my experiences at Chelsea. I now feel ready for a new challenge, and I'm excited to begin working with my new teammates.</blockquote>",
+          "<blockquote>I want to help the team control matches, compete for trophies and give everything for the supporters. I'm looking forward to playing in front of them for the first time.</blockquote>",
+          "<h2>Strengthening for the decisive months</h2>",
+          "The addition of Fernández comes at a crucial point in the <strong>2028/29 campaign</strong>.",
+          "With Islington entering the decisive second half of the season, the club sought to add a midfielder capable of making an immediate impact while strengthening the squad for the long term.",
+          "His arrival increases competition in central midfield and gives the team another player with experience of major domestic and international fixtures.",
+          "Fernández will now join first-team training and begin preparations for his potential Islington debut.",
+          "The coaching staff will work closely with the midfielder during his opening weeks at the club, but his familiarity with English football and his extensive senior experience are expected to support a smooth transition.",
+          "<h2>Welcome to Islington</h2>",
+          "From his beginnings at River Plate to his emergence in Europe, his World Cup success with Argentina and his years in the Premier League, Fernández arrives at Islington with an outstanding footballing background.",
+          "He joins the club as a proven international midfielder, a major new presence within the squad and a player capable of shaping matches at the highest level.",
+          "Everyone at Islington Football Club would like to welcome Enzo and his family to North London.",
+          "<strong>A new midfield leader. A new chapter. Welcome to Islington, Enzo Fernández.</strong>"
+        ]
+      },
+      'josh-king': {
+        title: 'Welcome to Islington, Josh King',
+        meta: 'Transfers | 1 Jan 2029',
+        image: 'assets/josh-king-welcome.png',
+        body: [
+          "Islington Football Club is delighted to confirm the signing of <strong>Josh King from Fulham</strong>.",
+          "The transfer was formally completed on <strong>1 January 2029</strong>, with Islington paying a fee of <strong>€36.8 million</strong> for the highly regarded English forward. King has agreed personal terms worth <strong>€88,000 per week</strong> and joins the club immediately for the second half of the <strong>2028/29 season</strong>.",
+          "His arrival represents Islington's first signing of the January transfer window and provides the squad with additional pace, directness and attacking versatility ahead of a decisive period of the campaign.",
+          "<h2>A new chapter in North London</h2>",
+          "King arrives in North London having established himself as one of Fulham's most exciting attacking players. Comfortable operating across several positions in the final third, he has earned recognition for his acceleration, intelligent movement and willingness to attack defenders directly.",
+          "Although still at an early stage of his career, King has already gained valuable experience in English football. His development at Fulham allowed him to mature in a technically demanding environment while learning to cope with the physical intensity and tactical discipline required at senior level.",
+          "Over time, he grew from a promising young player into a dependable member of the first-team squad. His performances were characterised by energy, confidence and an ability to influence matches both with and without the ball.",
+          "King's footballing journey has not been defined by one quality alone. His natural speed is perhaps his most immediately noticeable attribute, but the forward has also developed a strong understanding of space and timing. He is capable of stretching defensive lines, making penetrative runs behind the opposition and creating opportunities for teammates through quick combinations around the penalty area.",
+          "Those characteristics made him an attractive target for Islington as the club sought to strengthen its attacking options during the winter window.",
+          "<h2>Built for Islington's style</h2>",
+          "The recruitment department identified King as a player whose profile closely matches the club's long-term sporting vision.",
+          "His ability to play on either flank, operate between the lines or move into more central attacking areas will give the coaching staff greater tactical flexibility. He can provide width when required, but is equally comfortable moving inside to combine with midfielders and create space for overlapping full-backs.",
+          "King's work rate was another important factor behind the move. He is prepared to press from the front, recover possession and contribute to the collective structure of the team. This combination of technical quality and defensive commitment is considered essential within Islington's playing model.",
+          "The club also believes there remains significant room for further development. Working within Islington's first-team environment will give King the opportunity to refine his decision-making, improve his effectiveness in the final third and compete regularly at the highest level.",
+          "His arrival is therefore viewed not only as an immediate addition to the squad, but also as an investment in the club's future.",
+          "<h2>Ready for the next step</h2>",
+          "The move follows several weeks of discussions between Islington and Fulham. Once an agreement was reached between the two clubs, King completed his medical examination and finalised personal terms before the opening day of the January transfer window.",
+          "He will now begin training with his new teammates and will be available for selection once the relevant registration procedures have been completed.",
+          "<blockquote>I'm delighted to join Islington. This is an ambitious club with an exciting project, and I'm ready to work hard and help the team achieve its goals.</blockquote>",
+          "<blockquote>I have enjoyed my time at Fulham and I'm grateful to everyone who helped me during my development there. I learned a great deal, both as a player and as a person, but I felt that this was the right moment to take the next step in my career.</blockquote>",
+          "<blockquote>The conversations I had with the club were very positive. They explained how they want to play, what they expect from me and how they believe I can continue to improve. That gave me a lot of confidence in the decision.</blockquote>",
+          "<blockquote>I'm looking forward to meeting the supporters, playing in front of them and showing what I can bring to the team.</blockquote>",
+          "<h2>The club's first January arrival</h2>",
+          "King joins Islington at an important stage of the season, with the club preparing for a demanding schedule across domestic and European competitions.",
+          "His addition will increase competition within the attacking department and allow the coaching staff to manage workloads more effectively during the coming months. The club expects King's pace and unpredictability to offer a different dimension, particularly in matches where Islington must break through compact defensive structures or attack quickly in transition.",
+          "The timing of the deal also allows the forward to integrate into the squad from the beginning of the window. He will have the opportunity to familiarise himself with the team's tactical principles, training methods and expectations before the busiest part of the campaign.",
+          "While his immediate objective will be to contribute on the pitch, the club remains committed to supporting his longer-term development. Islington's coaching staff will work closely with King to help him adapt to his new environment and fulfil the potential that made him one of the club's priority targets.",
+          "<h2>Welcome to Islington</h2>",
+          "King leaves Fulham with the appreciation of those who contributed to his progression and begins a new stage of his career with the opportunity to represent one of North London's most ambitious clubs.",
+          "He arrives as a talented and determined young player, but also as an individual eager to learn, compete and contribute to the collective success of the team.",
+          "Everyone at Islington Football Club would like to thank Fulham for their professionalism throughout the negotiations and formally welcome Josh and his family to North London.",
+          "<strong>A new year. A new chapter. Welcome to Islington, Josh.</strong>"
+        ]
+      },
+      'away-kit-citadel': {
+        title: 'Islington unveil 2028/29 away kit and announce Citadel partnership',
+        meta: 'Club News | 22 Jul 2028',
+        image: 'assets/away-kit-citadel.png',
+        body: [
+          "Islington Football Club is proud to unveil its new <strong>2028/29 away kit</strong>, a refined burgundy design inspired by the architectural character, tailoring tradition and understated elegance of North London.",
+          "The club can also confirm a major long-term commercial agreement with <strong>Citadel Securities</strong>, which will become Islington's principal front-of-shirt partner across all first-team kits from the beginning of the <strong>2030/31 season</strong>.",
+          "The new away shirt provides the first visual introduction to the partnership, carrying the CITADEL name across the chest as part of an initial away-kit activation. Sungrow will remain the principal sponsor of Islington's home shirt throughout the 2028/29 and 2029/30 seasons, before Citadel Securities assumes full front-of-shirt rights from 2030/31.",
+          "<h2>A modern expression of Islington</h2>",
+          "The 2028/29 away shirt is built around a rich, dark burgundy base, continuing the club's move towards a more distinctive and recognisable visual identity.",
+          "The colour has been selected to reflect sophistication, confidence and heritage, while offering a clear contrast to the ivory tones of Islington's home kit.",
+          "An ivory fold-over collar gives the shirt a tailored, almost formal character. Matching ivory sleeve cuffs and shoulder stripes frame the design, while fine gold vertical lines introduce a subtle sense of depth without disrupting its restrained composition.",
+          "Across the body of the shirt, a tonal jacquard pattern incorporates ornamental motifs connected to the club's North London identity. The detailing becomes more visible under direct light, allowing the shirt to appear minimal from a distance while revealing greater complexity at close range.",
+          "The overall design combines the silhouette of a traditional football shirt with modern performance materials and contemporary construction.",
+          "<h2>A refined club crest</h2>",
+          "The away shirt features an ivory interpretation of Islington's heritage crest.",
+          "Rather than using the standard full-colour version, the monochrome crest has been integrated into the palette of the shirt, creating a more unified and premium appearance. It sits opposite the ivory adidas Trefoil, reinforcing the retro-inspired direction of the design.",
+          "The Trefoil has been selected specifically for the away collection to reference classic football apparel while maintaining the technical standards expected of a modern match shirt.",
+          "The shirt is completed by discreet gold detailing, including fine pinstripes, collar accents and sleeve embroidery.",
+          "<h2>Citadel introduced on the away shirt</h2>",
+          "The most significant visual change is the introduction of Citadel as the shirt's chest partner.",
+          "The sponsor mark is presented in ivory, with a geometric emblem positioned alongside the CITADEL wordmark. Its restrained application has been designed to sit naturally within the shirt rather than dominate the overall composition.",
+          "For the 2028/29 and 2029/30 seasons, Citadel branding will appear on selected away-kit assets as part of the opening phase of the partnership.",
+          "Sungrow will continue to appear on the club's home shirt during this period under the terms of its existing agreement.",
+          "From the beginning of the 2030/31 season, Citadel Securities will become Islington Football Club's principal front-of-shirt sponsor across the club's home, away and goalkeeper kits, formally replacing Sungrow as the club's primary shirt partner.",
+          "<h2>A long-term commercial partnership</h2>",
+          "The agreement with Citadel Securities represents one of the most significant commercial partnerships in the club's history.",
+          "The partnership extends beyond shirt sponsorship and will include collaboration across digital content, international brand development, supporter experiences and selected community initiatives in North London.",
+          "Citadel Securities will also work with the club on projects related to data, performance analysis and technology-led decision-making.",
+          "An Islington Football Club statement said:",
+          "<blockquote>We are delighted to welcome Citadel Securities into the Islington family. This is a partnership between two organisations that share a commitment to performance, innovation and long-term excellence.</blockquote>",
+          "<blockquote>The 2028/29 away shirt offers the first introduction to the relationship, while the full principal partnership will begin in 2030/31.</blockquote>",
+          "<blockquote>Citadel has shown a clear understanding of the club's identity and ambitions. Their support will play an important role as Islington continues to develop both on and off the pitch.</blockquote>",
+          "<h2>Sungrow partnership to conclude in 2030</h2>",
+          "Sungrow has served as one of Islington's most visible commercial partners during an important period of the club's development.",
+          "Its branding will remain on the front of the home shirt through the conclusion of the 2029/30 season. The club will continue to work closely with Sungrow throughout the remaining term of the agreement.",
+          "Islington thanked the company for its contribution:",
+          "<blockquote>Sungrow has been an important partner during a formative period in the club's history. Its support has accompanied Islington through significant sporting and institutional growth.</blockquote>",
+          "<blockquote>We look forward to continuing the partnership over the next two seasons and recognising Sungrow's contribution appropriately before the agreement concludes in 2030.</blockquote>",
+          "The transition has been structured to preserve continuity across the club's commercial programme. Citadel will initially be introduced through the away collection before becoming the exclusive principal shirt partner from 2030/31.",
+          "<h2>Designed beyond the pitch</h2>",
+          "The 2028/29 away collection has been conceived as both performance wear and a broader lifestyle range.",
+          "The shirt's polo collar, deep burgundy colour and restrained detailing allow it to be styled beyond matchday. The official campaign pairs the shirt with tailored dark trousers, presenting it as a contemporary piece influenced by both football culture and traditional menswear.",
+          "The wider collection will include the authentic match shirt, a replica supporter shirt, a long-sleeved version, a burgundy training top, an ivory presentation jacket, coordinating trousers and lifestyle pieces.",
+          "The club will also release a limited-edition version featuring additional gold detailing and commemorative packaging.",
+          "<h2>First appearance</h2>",
+          "The men's first team will wear the new away kit for the first time during its opening away fixture of the 2028/29 pre-season programme.",
+          "The women's first team and selected academy sides will wear corresponding versions of the design during the campaign.",
+          "The goalkeeper collection will be revealed separately.",
+          "<h2>A new chapter in burgundy</h2>",
+          "The 2028/29 away shirt reflects a more mature visual direction for Islington: traditional without appearing nostalgic, luxurious without excessive decoration and unmistakably connected to the club's identity.",
+          "It also marks the beginning of a new commercial era.",
+          "Citadel's appearance on the away shirt offers an early introduction to a partnership that will expand significantly from 2030/31, when the company replaces Sungrow as Islington's principal front-of-shirt sponsor across the entire first-team kit programme.",
+          "<strong>Burgundy in colour. Islington in character. The 2028/29 away kit has arrived.</strong>"
+        ]
+      },
+      'trafford-depth': {
+        title: 'Welcome to Islington, James Trafford',
+        meta: 'Transfers | 31 Jan 2029',
+        image: 'assets/james-trafford-welcome.png',
+        body: [
+          "Islington Football Club is delighted to confirm the signing of English goalkeeper <strong>James Trafford</strong>.",
+          "Trafford joins the club during the <strong>2028/29 season</strong>, adding further quality, athleticism and competition to Islington's goalkeeping department. The England international has completed his medical, finalised personal terms and will immediately begin working with his new teammates in North London.",
+          "The arrival of Trafford represents another important step in Islington's long-term sporting project. Still entering the prime years of his career, he combines extensive experience in English football with the potential to develop further at the highest level.",
+          "<h2>A modern goalkeeper for Islington</h2>",
+          "Trafford has established his reputation as a composed and technically accomplished goalkeeper.",
+          "Standing out for his reflexes, positioning and ability in one-on-one situations, he is also comfortable receiving possession and helping his team build attacks from the defensive third. His passing range allows him to play through pressure, find midfielders between the lines or launch quicker transitions when space becomes available.",
+          "Those qualities made him an ideal fit for Islington's playing philosophy.",
+          "The coaching staff wanted a goalkeeper capable of contributing beyond traditional shot-stopping responsibilities. Trafford's confidence with the ball, willingness to operate away from his goal line and ability to defend space behind a high defensive line should give the team greater control during possession.",
+          "His communication and command of the penalty area will also add an authoritative presence to the back line.",
+          "<h2>Developed in Manchester</h2>",
+          "Born in Cumbria, Trafford began his footballing development within the academy system at Manchester City.",
+          "He progressed through one of English football's most demanding youth structures, receiving an education built around technical excellence, positional intelligence and calmness in possession.",
+          "To gain senior experience, Trafford spent time on loan away from Manchester. Those spells proved important in his transition from academy football to the professional game, exposing him to the physical demands, pressure and responsibility required of a first-choice goalkeeper.",
+          "He subsequently became one of the most highly regarded young English goalkeepers of his generation.",
+          "Trafford's rise was driven not only by his natural ability, but also by his composure. Goalkeepers are often judged by their response to difficult moments, and Trafford developed a reputation for remaining calm after setbacks and maintaining concentration throughout matches.",
+          "That mentality has remained an important feature of his career.",
+          "<h2>International recognition</h2>",
+          "Trafford also attracted attention through his performances for England at youth level.",
+          "His defining international moment came during the 2023 UEFA European Under-21 Championship, when he played a central role in England's title-winning campaign. Trafford completed the tournament without conceding a goal and produced a decisive late penalty save in the final.",
+          "The performance reinforced his reputation as a goalkeeper capable of delivering in high-pressure situations.",
+          "His international experience has continued to shape his development, allowing him to train and compete alongside some of England's leading players. Islington believes that background will be particularly valuable as the club prepares for important domestic and European fixtures.",
+          "Trafford arrives with experience of expectation, competition and tournament football, qualities that should strengthen the mentality of the wider squad.",
+          "<h2>Competition and long-term planning</h2>",
+          "The signing forms part of Islington's strategy to build a squad capable of competing consistently across several competitions.",
+          "Trafford will provide immediate competition for the goalkeeper position while offering the club a high-level option for the future. His age profile, homegrown status and experience of English football were all important considerations during the recruitment process.",
+          "The club's sporting department conducted an extensive assessment of several goalkeeping candidates before identifying Trafford as the preferred target.",
+          "His combination of shot-stopping ability, distribution, physical presence and development potential closely matched the requirements established by the coaching staff.",
+          "Islington also believes his domestic experience should allow him to adapt quickly. Trafford already understands the intensity of English football, the speed of Premier League matches and the scrutiny attached to playing for an ambitious club.",
+          "<h2>Trafford on joining Islington</h2>",
+          "Speaking after completing the move, Trafford said:",
+          "<blockquote>I'm delighted to join Islington. It is a club with enormous ambition, a clear identity and a project that I immediately wanted to be part of.</blockquote>",
+          "<blockquote>The conversations with the manager and the sporting department were very positive. They explained how the team wants to play, what they expect from the goalkeeper and how they believe I can continue developing here.</blockquote>",
+          "<blockquote>I enjoy taking responsibility with the ball and helping the team build from the back, but my first responsibility is always to protect the goal and help the team win matches.</blockquote>",
+          "<blockquote>There is a lot of quality in this squad, and I know the competition will be strong. I'm ready to work, improve and earn my opportunities.</blockquote>",
+          "<blockquote>I'm looking forward to meeting the supporters and experiencing my first match in an Islington shirt.</blockquote>",
+          "<h2>An important addition for the second half of the season</h2>",
+          "Trafford arrives as Islington prepares to enter the decisive stage of the <strong>2028/29 campaign</strong>.",
+          "With the club competing across multiple fronts, squad depth and reliability will be crucial during the coming months. Trafford's addition gives the coaching staff greater flexibility while ensuring strong competition within the goalkeeping group.",
+          "His distribution could prove particularly important against opponents who press aggressively. By offering a secure option during the first phase of possession, Trafford can help Islington escape pressure and create numerical advantages further up the pitch.",
+          "Against teams defending deeper, his ability to remain involved outside the penalty area should allow Islington's defensive line to move higher and sustain attacks for longer periods.",
+          "He will now join first-team training and begin preparations for his potential debut.",
+          "<h2>Welcome to North London</h2>",
+          "From his early development in Manchester to his senior experience and memorable international success with England, Trafford arrives at Islington with a strong foundation and considerable potential.",
+          "He joins the club as a modern goalkeeper, a proven competitor and an ambitious player ready to take the next step in his career.",
+          "Everyone at Islington Football Club would like to welcome James and his family to North London.",
+          "<strong>A new guardian of the goal. A new chapter begins. Welcome to Islington, Trafford.</strong>"
+        ]
+      },
+      'winter-refresh': {
+        title: 'Inside the 2028/29 winter window squad refresh',
+        meta: 'Feature | 31 Jan 2029',
+        image: 'assets/home-kit-hero.webp',
+        body: [
+          "Islington's winter window was shaped by two linked priorities: sharpen the first-team squad and keep the club's financial structure under control.",
+          "Martin Zubimendi and Jose Carmona departed as the club adjusted the balance of the squad, creating room for new profiles in midfield and goal.",
+          "The arrivals of Enzo Fernandez, Josh King and James Trafford give Welsh more options across the spine of the team while reinforcing the club's English registration plan.",
+          "The work also reshaped the wage table, with updated figures now reflecting the club's position at 31 January 2029.",
+          "Club sources describe the window as disciplined rather than dramatic, with every move connected to role clarity and future squad planning."
+        ]
+      },
+      'bellingham-standards': {
+        title: 'Bellingham on standards, pressure and the N5 crowd',
+        meta: 'Interview | 31 Jan 2029',
+        image: 'assets/jude-bellingham.png',
+        body: [
+          "Jude Bellingham says Islington's progress this season has been driven by the group's refusal to let standards slip between matches.",
+          "The midfielder spoke about the importance of training intensity, leadership in difficult moments and the influence of the N5 crowd on home performances.",
+          "\"There is pressure here, but that is what you want,\" Bellingham said. \"The club is young, the expectations are growing and everyone has to carry that properly.\"",
+          "Bellingham also welcomed the winter additions, noting that competition for places can help the squad stay sharp during the final months of the campaign.",
+          "He believes Islington's next step will depend on consistency rather than one-off performances."
+        ]
+      },
+      'colney-gallery': {
+        title: 'Gallery: First team sharpen work at Colney',
+        meta: 'Picture Special | 30 Jan 2029',
+        image: 'assets/first-team-header.webp',
+        body: [
+          "The first team were back on the grass at Colney as preparations continued for the next run of fixtures.",
+          "Training focused on short passing patterns, finishing work and defensive spacing, with several academy staff also present to observe the session.",
+          "New arrivals were introduced to the rhythm of Welsh's work, while established players moved through a programme built around intensity and recovery.",
+          "The session ended with small-sided games designed to sharpen decision-making in crowded central areas.",
+          "View the latest images from the training ground as Islington continue their preparations."
+        ]
+      },
+      'away-colours': {
+        title: 'Away colours return for the late-season run',
+        meta: 'Club News | 30 Jan 2029',
+        image: 'assets/away-kit-hero-poster.webp',
+        body: [
+          "Islington will return to the away colours for selected fixtures across the final months of the season.",
+          "The kit, designed around the club's travelling identity, will feature in a series of away matches where colour contrast requirements allow its use.",
+          "Supporters will also see updated retail availability across shirt sizes, training pieces and selected lifestyle products connected to the away collection.",
+          "The club will confirm exact fixture usage closer to each matchday through official channels.",
+          "Additional supporter information for away travel will be published alongside ticket details."
+        ]
+      },
+      'supporter-restock': {
+        title: 'Supporter collection restocked online',
+        meta: 'Shop IFC | 30 Jan 2029',
+        image: 'assets/home-kit-product.webp',
+        body: [
+          "Selected items from the Islington supporter collection have been restocked online following strong demand after the first release.",
+          "The restock includes home shirts, lifestyle layers and accessories built around the club's cream, navy and burgundy palette.",
+          "The shop team has also added more size availability across key pieces after early orders moved faster than expected.",
+          "Supporters are encouraged to check product pages for updated delivery information before placing orders.",
+          "Further collection updates will follow as the club prepares additional drops for the closing months of the season."
+        ]
+      }
+    };
+    const publicStoryIds = ['next-england-generation', 'thank-you-captain-white', 'thank-you-carmona', 'thank-you-zubimendi', 'fernandez-joins', 'josh-king', 'trafford-depth', 'away-kit-citadel'];
+    Object.keys(stories).forEach((key) => {
+      if (!publicStoryIds.includes(key)) delete stories[key];
+    });
+    const storyKey = new URLSearchParams(window.location.search).get('story') || 'fernandez-joins';
+    const activeStory = stories[storyKey] || stories['fernandez-joins'];
+    document.title = `${activeStory.title} | TOPS`;
+    document.getElementById('story-title').textContent = activeStory.title;
+    document.getElementById('story-meta').textContent = activeStory.meta;
+    const storyImage = document.getElementById('story-image');
+    storyImage.src = activeStory.image;
+    storyImage.alt = activeStory.title;
+    document.getElementById('story-body').innerHTML = activeStory.body.map((block) => block.trim().startsWith('<') ? block : `<p>${block}</p>`).join('');
+
+    const rail = document.querySelector('.rail');
+    const railLinks = [...document.querySelectorAll('.rail nav a')];
+    const submenu = document.querySelector('.rail-submenu');
+    const submenuKicker = document.querySelector('.rail-submenu-kicker');
+    const submenuList = document.querySelector('.rail-submenu-list');
+    let submenuCloseTimer;
+    const submenuItems = {
+      matches: ['Fixtures', 'Results', 'Tables', 'Match centre', 'Borough Cup'],
+      teams: [{ label: "Men's First Team", href: 'mens-first-team.html' }, { label: 'History Rankings', href: 'history-rankings.html' }, { label: 'Squad Finance', href: 'squad-finance.html' }, { label: 'Transfer History', href: 'transfer-history.html' }, { label: 'Predecessor Players', href: 'predecessor-players.html' }],
+      tickets: ['Home tickets', 'Away tickets', 'Premium', 'Season tickets', 'Ticket exchange'],
+      membership: ['Join TOPS', 'Renew membership', 'Member benefits', 'Ticket access', 'Account'],
+      shop: ['Home kit', 'Away kit', 'Training wear', 'Lifestyle', 'Accessories'],
+      play: ['Live stream', 'Highlights', 'Interviews', 'Documentaries', 'Archive'],
+      club: ['History', 'Stadium', 'Community', 'Foundation', 'Contact'],
+      explore: [{ label: 'News', href: 'news.html' }, 'Gallery', 'Video', 'Features', 'Visit N5']
+    };
+    const keepSubmenuOpen = () => clearTimeout(submenuCloseTimer);
+    const closeSubmenu = () => {
+      document.body.classList.remove('submenu-open');
+      submenu.setAttribute('aria-hidden', 'true');
+      railLinks.forEach((link) => link.classList.remove('is-submenu-active'));
+    };
+    const scheduleSubmenuClose = () => {
+      clearTimeout(submenuCloseTimer);
+      submenuCloseTimer = setTimeout(closeSubmenu, 120);
+    };
+    const openSubmenu = (link) => {
+      const key = link.dataset.menu;
+      if (!key || !submenuItems[key]) return;
+      keepSubmenuOpen();
+      submenuKicker.textContent = link.textContent.trim();
+      submenuList.innerHTML = submenuItems[key].map((item) => {
+        const label = typeof item === 'string' ? item : item.label;
+        const href = typeof item === 'string' ? '#' : item.href;
+        return `<li><a href="${href}">${label}</a></li>`;
+      }).join('');
+      railLinks.forEach((item) => item.classList.toggle('is-submenu-active', item === link));
+      submenu.setAttribute('aria-hidden', 'false');
+      document.body.classList.add('submenu-open');
+    };
+    railLinks.forEach((link) => {
+      link.addEventListener('mouseenter', () => openSubmenu(link));
+      link.addEventListener('focus', () => openSubmenu(link));
+    });
+    rail.addEventListener('mouseleave', scheduleSubmenuClose);
+    rail.addEventListener('mouseenter', keepSubmenuOpen);
+    submenu.addEventListener('mouseleave', scheduleSubmenuClose);
+    submenu.addEventListener('mouseenter', keepSubmenuOpen);
+  </script>
+</body>
+</html>

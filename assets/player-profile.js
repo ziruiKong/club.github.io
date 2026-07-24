@@ -162,7 +162,6 @@
   ].filter(Boolean).join("");
 
   detail.innerHTML = `
-    <a class="back-link" href="${config.backHref}">${config.backLabel}</a>
     <header class="profile-head">
       <span class="profile-number">${player.number || ""}</span>
       <h1 class="profile-name">${player.name}</h1>
@@ -183,7 +182,6 @@
           </div>
         </section>
         <section class="season-block panel">
-          <p class="panel-title" title="Season Statistics">Seasons</p>
           <div class="season-scroll">
             <table class="season-table">
               <thead><tr><th>Season</th><th>Apps</th><th>Goals</th><th>Assists</th><th>${statFourth(player)}</th><th>Avg Rating</th></tr></thead>

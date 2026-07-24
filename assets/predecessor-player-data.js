@@ -583,6 +583,54 @@ window.TOPS_PREDECESSOR_PLAYER_DATA = [
     "photo": "assets/jesus-rodriguez.webp"
   },
   {
+    "id": "jose-carmona",
+    "number": "12",
+    "name": "Jose Carmona",
+    "position": "Defender",
+    "positionShort": "DEF",
+    "nationality": "Spain",
+    "seasons": "2028/29, 2027/28",
+    "stats": {
+      "appearances": 15,
+      "goals": 1,
+      "assists": 0,
+      "averageRating": "6.90",
+      "goalContributions": 1,
+      "cleanSheets": 1
+    },
+    "seasonStats": [
+      {
+        "season": "2028/29",
+        "appearances": 15,
+        "goals": 1,
+        "assists": 0,
+        "goalContributions": 1,
+        "cleanSheets": 1,
+        "averageRating": "6.90",
+        "ratedApps": 15
+      },
+      {
+        "season": "2027/28",
+        "appearances": 40,
+        "goals": 1,
+        "assists": 3,
+        "goalContributions": 4,
+        "cleanSheets": 5,
+        "yellowCards": 2,
+        "redCards": 0,
+        "averageRating": "6.71",
+        "ratedApps": 40
+      }
+    ],
+    "specificPosition": "RB",
+    "flag": "assets/es_1x1.svg",
+    "photo": "assets/jose-carmona.webp",
+    "age": "26",
+    "weeklyWage": "EUR80,000",
+    "annualSalary": "EUR4.0m",
+    "marketValue": "EUR37.0m"
+  },
+  {
     "id": "toni-fruk",
     "number": "14",
     "name": "Toni Fruk",
@@ -637,6 +685,52 @@ window.TOPS_PREDECESSOR_PLAYER_DATA = [
     "specificPosition": "ST / CAM",
     "flag": "assets/hr_1x1.svg",
     "photo": "assets/toni-fruk.png"
+  },
+  {
+    "id": "martin-zubimendi",
+    "number": "36",
+    "name": "Martin Zubimendi",
+    "position": "Midfielder",
+    "positionShort": "MID",
+    "nationality": "Spain",
+    "seasons": "2028/29, 2027/28",
+    "stats": {
+      "appearances": 11,
+      "goals": 1,
+      "assists": 1,
+      "averageRating": "7.20",
+      "goalContributions": 2
+    },
+    "seasonStats": [
+      {
+        "season": "2028/29",
+        "appearances": 11,
+        "goals": 1,
+        "assists": 1,
+        "goalContributions": 2,
+        "averageRating": "7.20",
+        "ratedApps": 11
+      },
+      {
+        "season": "2027/28",
+        "appearances": 46,
+        "goals": 8,
+        "assists": 13,
+        "goalContributions": 21,
+        "cleanSheets": 15,
+        "yellowCards": 0,
+        "redCards": 1,
+        "averageRating": "7.55",
+        "ratedApps": 46
+      }
+    ],
+    "specificPosition": "CDM",
+    "flag": "assets/es_1x1.svg",
+    "photo": "assets/martin-zubimendi.webp",
+    "age": "29",
+    "weeklyWage": "EUR195,000",
+    "annualSalary": "EUR10.0m",
+    "marketValue": "EUR100.0m"
   },
   {
     "id": "maximo-perrone",

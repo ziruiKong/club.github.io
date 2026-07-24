@@ -21,6 +21,18 @@ window.TOPS_PLAYER_DATA = [
     },
     "seasonStats": [
       {
+        "season": "2028/29",
+        "appearances": 0,
+        "goals": 0,
+        "assists": 0,
+        "goalContributions": 0,
+        "yellowCards": 0,
+        "redCards": 0,
+        "averageRating": "0.00",
+        "ratedApps": 0,
+        "cleanSheets": 0
+      },
+      {
         "season": "2027/28",
         "appearances": 54,
         "goals": 0,
@@ -84,11 +96,11 @@ window.TOPS_PLAYER_DATA = [
         "goals": 0,
         "assists": 0,
         "goalContributions": 0,
-        "clearances": 0,
         "yellowCards": 0,
         "redCards": 0,
         "averageRating": "0.00",
-        "ratedApps": 0
+        "ratedApps": 0,
+        "clearances": 0
       }
     ],
     "specificPosition": "CB",
@@ -123,11 +135,11 @@ window.TOPS_PLAYER_DATA = [
         "goals": 0,
         "assists": 0,
         "goalContributions": 0,
-        "clearances": 0,
         "yellowCards": 0,
         "redCards": 0,
         "averageRating": "0.00",
-        "ratedApps": 0
+        "ratedApps": 0,
+        "clearances": 0
       }
     ],
     "specificPosition": "CB",
@@ -158,6 +170,18 @@ window.TOPS_PLAYER_DATA = [
       "redCards": 0
     },
     "seasonStats": [
+      {
+        "season": "2028/29",
+        "appearances": 0,
+        "goals": 0,
+        "assists": 0,
+        "goalContributions": 0,
+        "yellowCards": 0,
+        "redCards": 0,
+        "averageRating": "0.00",
+        "ratedApps": 0,
+        "clearances": 0
+      },
       {
         "season": "2027/28",
         "appearances": 43,
@@ -194,6 +218,18 @@ window.TOPS_PLAYER_DATA = [
       "redCards": 0
     },
     "seasonStats": [
+      {
+        "season": "2028/29",
+        "appearances": 0,
+        "goals": 0,
+        "assists": 0,
+        "goalContributions": 0,
+        "yellowCards": 0,
+        "redCards": 0,
+        "averageRating": "0.00",
+        "ratedApps": 0,
+        "clearances": 0
+      },
       {
         "season": "2027/28",
         "appearances": 54,
@@ -250,6 +286,18 @@ window.TOPS_PLAYER_DATA = [
       "redCards": 0
     },
     "seasonStats": [
+      {
+        "season": "2028/29",
+        "appearances": 0,
+        "goals": 0,
+        "assists": 0,
+        "goalContributions": 0,
+        "yellowCards": 0,
+        "redCards": 0,
+        "averageRating": "0.00",
+        "ratedApps": 0,
+        "clearances": 0
+      },
       {
         "season": "2027/28",
         "appearances": 58,
@@ -310,6 +358,18 @@ window.TOPS_PLAYER_DATA = [
     },
     "seasonStats": [
       {
+        "season": "2028/29",
+        "appearances": 0,
+        "goals": 0,
+        "assists": 0,
+        "goalContributions": 0,
+        "yellowCards": 0,
+        "redCards": 0,
+        "averageRating": "0.00",
+        "ratedApps": 0,
+        "clearances": 0
+      },
+      {
         "season": "2027/28",
         "appearances": 42,
         "goals": 2,
@@ -349,6 +409,18 @@ window.TOPS_PLAYER_DATA = [
     },
     "seasonStats": [
       {
+        "season": "2028/29",
+        "appearances": 0,
+        "goals": 0,
+        "assists": 0,
+        "goalContributions": 0,
+        "yellowCards": 0,
+        "redCards": 0,
+        "averageRating": "0.00",
+        "ratedApps": 0,
+        "clearances": 0
+      },
+      {
         "season": "2027/28",
         "appearances": 46,
         "goals": 9,
@@ -382,8 +454,8 @@ window.TOPS_PLAYER_DATA = [
       }
     ],
     "specificPosition": "CM",
-    "weeklyWage": "EUR70,000",
-    "annualSalary": "EUR3.5m",
+    "weeklyWage": "EUR166,000",
+    "annualSalary": "EUR8.6m",
     "marketValue": "EUR74.5m"
   },
   {
@@ -407,6 +479,18 @@ window.TOPS_PLAYER_DATA = [
       "redCards": 0
     },
     "seasonStats": [
+      {
+        "season": "2028/29",
+        "appearances": 0,
+        "goals": 0,
+        "assists": 0,
+        "goalContributions": 0,
+        "yellowCards": 0,
+        "redCards": 0,
+        "averageRating": "0.00",
+        "ratedApps": 0,
+        "clearances": 0
+      },
       {
         "season": "2027/28",
         "appearances": 58,
@@ -441,8 +525,8 @@ window.TOPS_PLAYER_DATA = [
       }
     ],
     "specificPosition": "LM",
-    "weeklyWage": "EUR140,000",
-    "annualSalary": "EUR7.5m",
+    "weeklyWage": "EUR506,000",
+    "annualSalary": "EUR26.3m",
     "marketValue": "EUR156.0m"
   },
   {
@@ -466,6 +550,18 @@ window.TOPS_PLAYER_DATA = [
       "redCards": 0
     },
     "seasonStats": [
+      {
+        "season": "2028/29",
+        "appearances": 0,
+        "goals": 0,
+        "assists": 0,
+        "goalContributions": 0,
+        "yellowCards": 0,
+        "redCards": 0,
+        "averageRating": "0.00",
+        "ratedApps": 0,
+        "clearances": 0
+      },
       {
         "season": "2027/28",
         "appearances": 56,
@@ -500,8 +596,8 @@ window.TOPS_PLAYER_DATA = [
       }
     ],
     "specificPosition": "CAM",
-    "weeklyWage": "EUR90,000",
-    "annualSalary": "EUR4.5m",
+    "weeklyWage": "EUR304,000",
+    "annualSalary": "EUR15.8m",
     "marketValue": "EUR152.5m"
   },
   {
@@ -525,6 +621,18 @@ window.TOPS_PLAYER_DATA = [
       "redCards": 0
     },
     "seasonStats": [
+      {
+        "season": "2028/29",
+        "appearances": 0,
+        "goals": 0,
+        "assists": 0,
+        "goalContributions": 0,
+        "yellowCards": 0,
+        "redCards": 0,
+        "averageRating": "0.00",
+        "ratedApps": 0,
+        "clearances": 0
+      },
       {
         "season": "2027/28",
         "appearances": 54,
@@ -575,6 +683,18 @@ window.TOPS_PLAYER_DATA = [
     },
     "seasonStats": [
       {
+        "season": "2028/29",
+        "appearances": 0,
+        "goals": 0,
+        "assists": 0,
+        "goalContributions": 0,
+        "yellowCards": 0,
+        "redCards": 0,
+        "averageRating": "0.00",
+        "ratedApps": 0,
+        "clearances": 0
+      },
+      {
         "season": "2027/28",
         "appearances": 55,
         "goals": 51,
@@ -618,11 +738,11 @@ window.TOPS_PLAYER_DATA = [
         "goals": 0,
         "assists": 0,
         "goalContributions": 0,
-        "clearances": 0,
         "yellowCards": 0,
         "redCards": 0,
         "averageRating": "0.00",
-        "ratedApps": 0
+        "ratedApps": 0,
+        "clearances": 0
       }
     ],
     "specificPosition": "CAM",
@@ -653,6 +773,18 @@ window.TOPS_PLAYER_DATA = [
     },
     "seasonStats": [
       {
+        "season": "2028/29",
+        "appearances": 0,
+        "goals": 0,
+        "assists": 0,
+        "goalContributions": 0,
+        "yellowCards": 0,
+        "redCards": 0,
+        "averageRating": "0.00",
+        "ratedApps": 0,
+        "clearances": 0
+      },
+      {
         "season": "2027/28",
         "appearances": 17,
         "goals": 4,
@@ -678,45 +810,6 @@ window.TOPS_PLAYER_DATA = [
     "specificPosition": "LM / LW"
   },
   {
-    "id": "jose-carmona",
-    "number": "12",
-    "name": "Jose Carmona",
-    "position": "Defender",
-    "positionShort": "DEF",
-    "nationality": "Spain",
-    "flag": "assets/es_1x1.svg",
-    "photo": "assets/jose-carmona.webp",
-    "age": "26",
-    "stats": {
-      "appearances": 40,
-      "goals": 1,
-      "assists": 3,
-      "averageRating": "6.71",
-      "goalContributions": 4,
-      "cleanSheets": 5,
-      "yellowCards": 2,
-      "redCards": 0
-    },
-    "seasonStats": [
-      {
-        "season": "2027/28",
-        "appearances": 40,
-        "goals": 1,
-        "assists": 3,
-        "goalContributions": 4,
-        "cleanSheets": 5,
-        "yellowCards": 2,
-        "redCards": 0,
-        "averageRating": "6.71",
-        "ratedApps": 40
-      }
-    ],
-    "specificPosition": "RB",
-    "weeklyWage": "EUR80,000",
-    "annualSalary": "EUR4.0m",
-    "marketValue": "EUR37.0m"
-  },
-  {
     "id": "luka-vuskovic",
     "number": "13",
     "name": "Luka Vuskovic",
@@ -737,6 +830,18 @@ window.TOPS_PLAYER_DATA = [
       "redCards": 0
     },
     "seasonStats": [
+      {
+        "season": "2028/29",
+        "appearances": 0,
+        "goals": 0,
+        "assists": 0,
+        "goalContributions": 0,
+        "yellowCards": 0,
+        "redCards": 0,
+        "averageRating": "0.00",
+        "ratedApps": 0,
+        "clearances": 0
+      },
       {
         "season": "2027/28",
         "appearances": 24,
@@ -781,11 +886,11 @@ window.TOPS_PLAYER_DATA = [
         "goals": 0,
         "assists": 0,
         "goalContributions": 0,
-        "clearances": 0,
         "yellowCards": 0,
         "redCards": 0,
         "averageRating": "0.00",
-        "ratedApps": 0
+        "ratedApps": 0,
+        "clearances": 0
       }
     ],
     "specificPosition": "ST",
@@ -815,6 +920,18 @@ window.TOPS_PLAYER_DATA = [
       "redCards": 0
     },
     "seasonStats": [
+      {
+        "season": "2028/29",
+        "appearances": 0,
+        "goals": 0,
+        "assists": 0,
+        "goalContributions": 0,
+        "yellowCards": 0,
+        "redCards": 0,
+        "averageRating": "0.00",
+        "ratedApps": 0,
+        "clearances": 0
+      },
       {
         "season": "2027/28",
         "appearances": 33,
@@ -868,6 +985,18 @@ window.TOPS_PLAYER_DATA = [
     },
     "seasonStats": [
       {
+        "season": "2028/29",
+        "appearances": 0,
+        "goals": 0,
+        "assists": 0,
+        "goalContributions": 0,
+        "yellowCards": 0,
+        "redCards": 0,
+        "averageRating": "0.00",
+        "ratedApps": 0,
+        "clearances": 0
+      },
+      {
         "season": "2027/28",
         "appearances": 0,
         "goals": 0,
@@ -898,6 +1027,18 @@ window.TOPS_PLAYER_DATA = [
       "averageRating": "0.0"
     },
     "seasonStats": [
+      {
+        "season": "2028/29",
+        "appearances": 0,
+        "goals": 0,
+        "assists": 0,
+        "goalContributions": 0,
+        "yellowCards": 0,
+        "redCards": 0,
+        "averageRating": "0.00",
+        "ratedApps": 0,
+        "clearances": 0
+      },
       {
         "season": "2027/28",
         "appearances": 0,
@@ -934,6 +1075,18 @@ window.TOPS_PLAYER_DATA = [
     },
     "seasonStats": [
       {
+        "season": "2028/29",
+        "appearances": 0,
+        "goals": 0,
+        "assists": 0,
+        "goalContributions": 0,
+        "yellowCards": 0,
+        "redCards": 0,
+        "averageRating": "0.00",
+        "ratedApps": 0,
+        "clearances": 0
+      },
+      {
         "season": "2027/28",
         "appearances": 51,
         "goals": 8,
@@ -967,8 +1120,8 @@ window.TOPS_PLAYER_DATA = [
       }
     ],
     "specificPosition": "CM",
-    "weeklyWage": "EUR70,000",
-    "annualSalary": "EUR3.5m",
+    "weeklyWage": "EUR221,000",
+    "annualSalary": "EUR11.5m",
     "marketValue": "EUR144.5m"
   },
   {
@@ -990,6 +1143,18 @@ window.TOPS_PLAYER_DATA = [
       "cleanSheets": 0
     },
     "seasonStats": [
+      {
+        "season": "2028/29",
+        "appearances": 0,
+        "goals": 0,
+        "assists": 0,
+        "goalContributions": 0,
+        "yellowCards": 0,
+        "redCards": 0,
+        "averageRating": "0.00",
+        "ratedApps": 0,
+        "clearances": 0
+      },
       {
         "season": "2027/28",
         "appearances": 0,
@@ -1047,6 +1212,18 @@ window.TOPS_PLAYER_DATA = [
     },
     "seasonStats": [
       {
+        "season": "2028/29",
+        "appearances": 0,
+        "goals": 0,
+        "assists": 0,
+        "goalContributions": 0,
+        "yellowCards": 0,
+        "redCards": 0,
+        "averageRating": "0.00",
+        "ratedApps": 0,
+        "clearances": 0
+      },
+      {
         "season": "2027/28",
         "appearances": 0,
         "goals": 0,
@@ -1081,6 +1258,18 @@ window.TOPS_PLAYER_DATA = [
       "redCards": 0
     },
     "seasonStats": [
+      {
+        "season": "2028/29",
+        "appearances": 0,
+        "goals": 0,
+        "assists": 0,
+        "goalContributions": 0,
+        "yellowCards": 0,
+        "redCards": 0,
+        "averageRating": "0.00",
+        "ratedApps": 0,
+        "clearances": 0
+      },
       {
         "season": "2027/28",
         "appearances": 33,
@@ -1130,6 +1319,18 @@ window.TOPS_PLAYER_DATA = [
     },
     "seasonStats": [
       {
+        "season": "2028/29",
+        "appearances": 0,
+        "goals": 0,
+        "assists": 0,
+        "goalContributions": 0,
+        "yellowCards": 0,
+        "redCards": 0,
+        "averageRating": "0.00",
+        "ratedApps": 0,
+        "clearances": 0
+      },
+      {
         "season": "2026/27",
         "appearances": 23,
         "goals": 3,
@@ -1165,6 +1366,18 @@ window.TOPS_PLAYER_DATA = [
       "clearances": 0
     },
     "seasonStats": [
+      {
+        "season": "2028/29",
+        "appearances": 0,
+        "goals": 0,
+        "assists": 0,
+        "goalContributions": 0,
+        "yellowCards": 0,
+        "redCards": 0,
+        "averageRating": "0.00",
+        "ratedApps": 0,
+        "clearances": 0
+      },
       {
         "season": "2026/27",
         "appearances": 23,
@@ -1207,11 +1420,11 @@ window.TOPS_PLAYER_DATA = [
         "goals": 0,
         "assists": 0,
         "goalContributions": 0,
-        "clearances": 0,
         "yellowCards": 0,
         "redCards": 0,
         "averageRating": "0.00",
-        "ratedApps": 0
+        "ratedApps": 0,
+        "clearances": 0
       }
     ],
     "specificPosition": "CM",
@@ -1241,6 +1454,18 @@ window.TOPS_PLAYER_DATA = [
       "redCards": 0
     },
     "seasonStats": [
+      {
+        "season": "2028/29",
+        "appearances": 0,
+        "goals": 0,
+        "assists": 0,
+        "goalContributions": 0,
+        "yellowCards": 0,
+        "redCards": 0,
+        "averageRating": "0.00",
+        "ratedApps": 0,
+        "clearances": 0
+      },
       {
         "season": "2027/28",
         "appearances": 40,
@@ -1278,7 +1503,7 @@ window.TOPS_PLAYER_DATA = [
   },
   {
     "id": "elias-baum",
-    "number": "24",
+    "number": "26",
     "name": "Elias Baum",
     "position": "Defender",
     "positionShort": "DEF",
@@ -1294,6 +1519,18 @@ window.TOPS_PLAYER_DATA = [
     },
     "seasonStats": [
       {
+        "season": "2028/29",
+        "appearances": 0,
+        "goals": 0,
+        "assists": 0,
+        "goalContributions": 0,
+        "yellowCards": 0,
+        "redCards": 0,
+        "averageRating": "0.00",
+        "ratedApps": 0,
+        "clearances": 0
+      },
+      {
         "season": "2027/28",
         "appearances": 0,
         "goals": 0,
@@ -1305,6 +1542,45 @@ window.TOPS_PLAYER_DATA = [
     "weeklyWage": "EUR65,000",
     "annualSalary": "EUR3.5m",
     "marketValue": "EUR42.0m"
+  },
+  {
+    "id": "enzo-fernandez",
+    "number": "24",
+    "name": "Enzo Fernandez",
+    "position": "Midfielder",
+    "positionShort": "MID",
+    "nationality": "Argentina",
+    "flag": "assets/ar_1x1.svg",
+    "photo": "assets/enzo-fernandez.png",
+    "age": "27",
+    "stats": {
+      "appearances": 0,
+      "goals": 0,
+      "assists": 0,
+      "averageRating": "0.00",
+      "goalContributions": 0,
+      "clearances": 0,
+      "yellowCards": 0,
+      "redCards": 0
+    },
+    "seasonStats": [
+      {
+        "season": "2028/29",
+        "appearances": 0,
+        "goals": 0,
+        "assists": 0,
+        "goalContributions": 0,
+        "yellowCards": 0,
+        "redCards": 0,
+        "averageRating": "0.00",
+        "ratedApps": 0,
+        "clearances": 0
+      }
+    ],
+    "specificPosition": "CM",
+    "weeklyWage": "EUR260,000",
+    "annualSalary": "EUR13.5m",
+    "marketValue": "EUR109.6m"
   },
   {
     "id": "cassian-wrenford",
@@ -1323,6 +1599,18 @@ window.TOPS_PLAYER_DATA = [
       "averageRating": "0.0"
     },
     "seasonStats": [
+      {
+        "season": "2028/29",
+        "appearances": 0,
+        "goals": 0,
+        "assists": 0,
+        "goalContributions": 0,
+        "yellowCards": 0,
+        "redCards": 0,
+        "averageRating": "0.00",
+        "ratedApps": 0,
+        "clearances": 0
+      },
       {
         "season": "2027/28",
         "appearances": 0,
@@ -1358,6 +1646,18 @@ window.TOPS_PLAYER_DATA = [
       "redCards": 0
     },
     "seasonStats": [
+      {
+        "season": "2028/29",
+        "appearances": 0,
+        "goals": 0,
+        "assists": 0,
+        "goalContributions": 0,
+        "yellowCards": 0,
+        "redCards": 0,
+        "averageRating": "0.00",
+        "ratedApps": 0,
+        "clearances": 0
+      },
       {
         "season": "2027/28",
         "appearances": 22,
@@ -1402,11 +1702,11 @@ window.TOPS_PLAYER_DATA = [
         "goals": 0,
         "assists": 0,
         "goalContributions": 0,
-        "clearances": 0,
         "yellowCards": 0,
         "redCards": 0,
         "averageRating": "0.00",
-        "ratedApps": 0
+        "ratedApps": 0,
+        "clearances": 0
       }
     ],
     "specificPosition": "RW",
@@ -1437,6 +1737,18 @@ window.TOPS_PLAYER_DATA = [
     },
     "seasonStats": [
       {
+        "season": "2028/29",
+        "appearances": 0,
+        "goals": 0,
+        "assists": 0,
+        "goalContributions": 0,
+        "yellowCards": 0,
+        "redCards": 0,
+        "averageRating": "0.00",
+        "ratedApps": 0,
+        "clearances": 0
+      },
+      {
         "season": "2027/28",
         "appearances": 57,
         "goals": 5,
@@ -1460,8 +1772,8 @@ window.TOPS_PLAYER_DATA = [
       }
     ],
     "specificPosition": "LB",
-    "weeklyWage": "EUR130,000",
-    "annualSalary": "EUR7.0m",
+    "weeklyWage": "EUR524,000",
+    "annualSalary": "EUR27.2m",
     "marketValue": "EUR75.5m"
   },
   {
@@ -1490,11 +1802,11 @@ window.TOPS_PLAYER_DATA = [
         "goals": 0,
         "assists": 0,
         "goalContributions": 0,
-        "clearances": 0,
         "yellowCards": 0,
         "redCards": 0,
         "averageRating": "0.00",
-        "ratedApps": 0
+        "ratedApps": 0,
+        "clearances": 0
       }
     ],
     "specificPosition": "CB",
@@ -1504,43 +1816,82 @@ window.TOPS_PLAYER_DATA = [
     "marketValue": "EUR38.0m"
   },
   {
-    "id": "martin-zubimendi",
+    "id": "josh-king",
     "number": "36",
-    "name": "Martin Zubimendi",
+    "name": "Josh King",
     "position": "Midfielder",
     "positionShort": "MID",
-    "nationality": "Spain",
-    "flag": "assets/es_1x1.svg",
-    "photo": "assets/martin-zubimendi.webp",
-    "age": "29",
+    "nationality": "England",
+    "flag": "assets/gb-eng.svg",
+    "photo": "assets/josh-king.png",
+    "age": "21",
     "stats": {
-      "appearances": 46,
-      "goals": 8,
-      "assists": 13,
-      "averageRating": "7.55",
-      "goalContributions": 21,
-      "cleanSheets": 15,
+      "appearances": 0,
+      "goals": 0,
+      "assists": 0,
+      "averageRating": "0.00",
+      "goalContributions": 0,
+      "clearances": 0,
       "yellowCards": 0,
-      "redCards": 1
+      "redCards": 0
     },
     "seasonStats": [
       {
-        "season": "2027/28",
-        "appearances": 46,
-        "goals": 8,
-        "assists": 13,
-        "goalContributions": 21,
-        "cleanSheets": 15,
+        "season": "2028/29",
+        "appearances": 0,
+        "goals": 0,
+        "assists": 0,
+        "goalContributions": 0,
         "yellowCards": 0,
-        "redCards": 1,
-        "averageRating": "7.55",
-        "ratedApps": 46
+        "redCards": 0,
+        "averageRating": "0.00",
+        "ratedApps": 0,
+        "clearances": 0
       }
     ],
-    "specificPosition": "CDM",
-    "weeklyWage": "EUR195,000",
-    "annualSalary": "EUR10.0m",
-    "marketValue": "EUR100.0m"
+    "specificPosition": "CM",
+    "weeklyWage": "EUR88,000",
+    "annualSalary": "EUR4.6m",
+    "marketValue": "EUR36.8m"
+  },
+  {
+    "id": "james-trafford",
+    "number": "69",
+    "name": "James Trafford",
+    "position": "Goalkeeper",
+    "positionShort": "GKP",
+    "nationality": "England",
+    "flag": "assets/gb-eng.svg",
+    "photo": "assets/james-trafford.png",
+    "age": "26",
+    "stats": {
+      "appearances": 0,
+      "goals": 0,
+      "assists": 0,
+      "averageRating": "0.00",
+      "goalContributions": 0,
+      "cleanSheets": 0,
+      "yellowCards": 0,
+      "redCards": 0
+    },
+    "seasonStats": [
+      {
+        "season": "2028/29",
+        "appearances": 0,
+        "goals": 0,
+        "assists": 0,
+        "goalContributions": 0,
+        "yellowCards": 0,
+        "redCards": 0,
+        "averageRating": "0.00",
+        "ratedApps": 0,
+        "cleanSheets": 0
+      }
+    ],
+    "specificPosition": "GK",
+    "weeklyWage": "EUR69,000",
+    "annualSalary": "EUR3.6m",
+    "marketValue": "EUR31.6m"
   },
   {
     "id": "berke-ozer",
@@ -1563,6 +1914,18 @@ window.TOPS_PLAYER_DATA = [
       "redCards": 0
     },
     "seasonStats": [
+      {
+        "season": "2028/29",
+        "appearances": 0,
+        "goals": 0,
+        "assists": 0,
+        "goalContributions": 0,
+        "yellowCards": 0,
+        "redCards": 0,
+        "averageRating": "0.00",
+        "ratedApps": 0,
+        "cleanSheets": 0
+      },
       {
         "season": "2027/28",
         "appearances": 13,

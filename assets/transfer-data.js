@@ -425,6 +425,62 @@ window.TOPS_TRANSFER_DATA = {
           "type": "Loan"
         }
       ]
+    },
+    {
+      "id": "2028-winter",
+      "season": "2028/29",
+      "window": "Winter",
+      "summary": "Islington FC completed its 2028/29 winter window with two major departures and three first-team arrivals.",
+      "arrivals": [
+        {
+          "playerId": "enzo-fernandez",
+          "player": "Enzo Fernandez",
+          "position": "CM",
+          "from": "Chelsea",
+          "fee": "EUR109.6m",
+          "type": "Creative midfield signing",
+          "note": "Improves midfield creativity and control.",
+          "weeklyWage": "EUR260,000"
+        },
+        {
+          "playerId": "josh-king",
+          "player": "Josh King",
+          "position": "England player",
+          "from": "Fulham",
+          "fee": "EUR36.8m",
+          "type": "Homegrown strategy",
+          "note": "Adds depth to the club's English core.",
+          "weeklyWage": "EUR88,000"
+        },
+        {
+          "playerId": "james-trafford",
+          "player": "James Trafford",
+          "position": "Goalkeeper",
+          "from": "West Ham",
+          "fee": "EUR31.6m",
+          "type": "Goalkeeper signing",
+          "note": "Young English goalkeeper depth.",
+          "weeklyWage": "EUR69,000"
+        }
+      ],
+      "departures": [
+        {
+          "playerId": "martin-zubimendi",
+          "player": "Martin Zubimendi",
+          "position": "CDM/CM",
+          "destination": "Manchester United",
+          "fee": "EUR164.2m",
+          "note": "Squad structure adjustment; frees core defensive-midfield salary space."
+        },
+        {
+          "playerId": "jose-carmona",
+          "player": "Jose Carmona",
+          "position": "CB/RB",
+          "destination": "Arsenal",
+          "fee": "EUR61.4m",
+          "note": "Defensive competition is high; player seeks a stable starting role."
+        }
+      ]
     }
   ]
 };

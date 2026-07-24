@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>News | TOPS</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700;900&family=Cinzel:wght@700;800;900&family=DM+Sans:wght@400;500;600;700;800&family=Libre+Caslon+Display&display=swap" rel="stylesheet">
+  <style>
+    :root{--ink:#071426;--navy:#101f3a;--burgundy:#6f1f2c;--warm:#f1ece2;--paper:#faf8f3;--line:#101f3a18;--gold:#c6a35b}
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--paper);color:var(--ink);font-family:"DM Sans",sans-serif}
+    a{color:inherit;text-decoration:none}
+    .rail{position:fixed;z-index:9;inset:0 auto 0 0;width:200px;background:var(--burgundy);color:var(--warm);border-right:2px solid var(--gold);display:flex;flex-direction:column}
+    .rail-brand{display:grid;place-items:center;width:100%;padding:42px 24px 38px;margin:0 0 40px;background:var(--navy);border-bottom:2px solid var(--gold)}.tops-wordmark{display:block;width:126px;line-height:0}.tops-wordmark img{display:block;width:100%;height:auto}
+    .rail nav{display:flex;flex-direction:column;gap:18px;padding:0 24px;font:700 22px/1.06 "Libre Caslon Display",Georgia,serif;letter-spacing:-.025em}.rail nav a:hover,.rail nav a.active,.rail nav a.is-submenu-active{color:var(--gold)}
+    .rail-submenu{position:fixed;z-index:8;top:0;bottom:0;left:200px;width:min(620px,calc(100vw - 200px));background:#f8f5ee;color:var(--navy);border:1px solid var(--burgundy);border-left-width:2px;padding:118px 40px 42px;opacity:0;transform:translateX(-18px);pointer-events:none;transition:opacity .28s ease,transform .28s ease}
+    body.submenu-open .rail-submenu{opacity:1;transform:translateX(0);pointer-events:auto}.rail-submenu-kicker{margin:0 0 30px;font-size:10px;font-weight:800;letter-spacing:.22em;text-transform:uppercase;color:var(--burgundy)}.rail-submenu-list{margin:0;padding:0;list-style:none;border-top:1px solid #101f3a18}.rail-submenu-list a{display:flex;align-items:center;justify-content:space-between;gap:34px;padding:28px 0;border-bottom:1px solid #101f3a18;font:clamp(34px,4.2vw,58px)/.95 "Libre Caslon Display",Georgia,serif;letter-spacing:-.035em}.rail-submenu-list a:after{content:">";font-family:Georgia,serif;font-size:.82em;transition:transform .2s ease}.rail-submenu-list a:hover{color:var(--burgundy)}.rail-submenu-list a:hover:after{transform:translateX(6px)}
+    .page{margin-left:200px;min-height:100vh;background:var(--paper)}
+    .news-hero{padding:76px clamp(28px,4.5vw,72px) 24px;background:#f8f5ee;border-bottom:1px solid #101f3a18}
+    h1{margin:0;color:var(--navy);font:900 clamp(54px,7vw,104px)/.86 "Cinzel Decorative","Cinzel",serif;letter-spacing:.04em;text-transform:uppercase}
+    .news-tabs{display:flex;flex-wrap:wrap;gap:0;margin:30px 0 0;border-bottom:1px solid #101f3a18}.news-tabs a{position:relative;padding:0 30px 16px 0;margin-right:28px;color:#5b6677;font-size:14px;font-weight:900}.news-tabs a:not(:last-child):after{content:"";position:absolute;right:0;top:2px;width:1px;height:15px;background:#101f3a22}.news-tabs a.active{color:var(--navy)}.news-tabs a.active:before{content:"";position:absolute;left:0;right:30px;bottom:-1px;height:4px;background:var(--navy)}
+    .news-shell{padding:36px clamp(28px,4.5vw,72px) 88px}
+    .news-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px 34px;width:100%}.news-item{display:grid;grid-template-columns:minmax(210px,38%) minmax(0,1fr);gap:24px;align-items:center;min-height:190px;padding:22px 0;border-bottom:1px solid #101f3a12}.news-item.is-hidden,.news-date.is-hidden{display:none!important}.news-item img{display:block;width:100%;aspect-ratio:16/10;object-fit:cover;background:#ddd}.news-item h2{margin:8px 0 0;color:var(--navy);font:800 clamp(24px,1.9vw,34px)/1.04 "DM Sans",sans-serif;letter-spacing:-.04em}.news-item p{margin:0;color:#657083;font-size:11px;font-weight:900;text-transform:uppercase;letter-spacing:.08em}.news-date{grid-column:1/-1;margin:34px 0 -4px;color:var(--navy);font-size:12px;font-weight:900;border-bottom:1px solid #101f3a12;padding-bottom:10px}
+    .pager{grid-column:1/-1;display:flex;gap:12px;align-items:center;margin:34px 0 0}.pager button{display:grid;place-items:center;width:24px;height:24px;border:0;border-radius:50%;background:#e8edf1;color:#5f6b79;font-size:12px;font-weight:800;cursor:pointer}.pager button.active{background:var(--navy);color:#fff}.pager:empty{display:none}
+    footer{height:300px;background:#020936;color:#f1ece2;overflow:hidden;display:flex;align-items:center}.tops-pattern{width:100%;overflow:hidden}.tops-pattern-track{display:flex;align-items:center;gap:76px;width:max-content;animation:topsMarquee 24s linear infinite}.tops-pattern-item{display:flex;align-items:center;gap:.16em;white-space:nowrap;color:#f1ece2;font:italic clamp(128px,13.8vw,228px)/.78 Georgia,serif;letter-spacing:-.065em;text-transform:uppercase}.tops-pattern-item img{width:.86em;height:.86em;object-fit:contain;display:block;transform:translateY(-.015em)}@keyframes topsMarquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+    @media(max-width:1220px){.news-grid{grid-template-columns:1fr}.news-item{grid-template-columns:280px minmax(0,1fr)}}@media(max-width:760px){.rail,.rail-submenu{display:none}.page{margin-left:0}.news-hero{padding:48px 24px 24px}.news-tabs a{margin-right:18px;padding-right:20px;font-size:12px}.news-tabs a.active:before{right:20px}.news-shell{padding:28px 24px 70px}.news-item{grid-template-columns:140px minmax(0,1fr);gap:18px;min-height:140px}.news-item h2{font-size:18px}}@media(max-width:520px){.news-item{grid-template-columns:1fr}.news-item img{aspect-ratio:2.1/1}}
+  </style>
+</head>
+<body>
+  <aside class="rail">
+    <a class="rail-brand" href="index.html#top" aria-label="TOPS home"><span class="tops-wordmark"><img src="assets/sidebar-sculpture-logo.webp" alt="TOPS"></span></a>
+    <nav><a class="active" href="news.html">News</a><a href="index.html#fixtures" data-menu="matches">Matches</a><a href="mens-first-team.html" data-menu="teams">Teams</a><a href="index.html#tickets" data-menu="tickets">Tickets</a><a href="index.html#membership" data-menu="membership">Membership</a><a href="index.html#shop" data-menu="shop">Shop IFC</a><a href="index.html#play" data-menu="play">IFC PLAY</a><a href="index.html#club" data-menu="club">The Club</a><a href="index.html#latest" data-menu="explore">Explore</a></nav>
+  </aside>
+  <aside class="rail-submenu" aria-hidden="true"><p class="rail-submenu-kicker">Teams</p><ul class="rail-submenu-list"></ul></aside>
+  <main class="page">
+    <header class="news-hero">
+      <h1>News</h1>
+      <nav class="news-tabs" aria-label="News categories">
+        <a class="active" href="#" data-filter="all">All News</a>
+        <a href="#" data-filter="transfers">Transfers</a>
+        <a href="#" data-filter="club">Club News</a>
+      </nav>
+    </header>
+    <section class="news-shell">
+      <div class="news-grid">
+          <a class="news-item" data-category="club" data-date-group="Today" href="news-detail.html?story=next-england-generation"><img src="assets/next-england-generation.png" alt=""><div><p>Club News | 15 Mar 2029</p><h2>Islington FC launches NEXT England Generation Project</h2></div></a>
+          <a class="news-item" data-category="transfers" data-date-group="Today" href="news-detail.html?story=thank-you-zubimendi"><img src="assets/thank-you-zubimendi.png" alt=""><div><p>Transfers | 31 Jan 2029</p><h2>Thank you, Mart&iacute;n Zubimendi</h2></div></a>
+          <a class="news-item" data-category="transfers" data-date-group="Today" href="news-detail.html?story=thank-you-carmona"><img src="assets/thank-you-carmona.png" alt=""><div><p>Transfers | 31 Jan 2029</p><h2>Thank you, Jos&eacute; Carmona</h2></div></a>
+          <a class="news-item" data-category="transfers" data-date-group="Today" href="news-detail.html?story=fernandez-joins"><img src="assets/enzo-fernandez-welcome.png" alt=""><div><p>Transfers | 31 Jan 2029</p><h2>Welcome to Islington, Enzo Fernández</h2></div></a>
+          <a class="news-item" data-category="transfers" data-date-group="Today" href="news-detail.html?story=josh-king"><img src="assets/josh-king-welcome.png" alt=""><div><p>Transfers | 1 Jan 2029</p><h2>Welcome to Islington, Josh King</h2></div></a>
+          <a class="news-item" data-category="transfers" data-date-group="Today" href="news-detail.html?story=trafford-depth"><img src="assets/james-trafford-welcome.png" alt=""><div><p>Transfers | 31 Jan 2029</p><h2>Welcome to Islington, James Trafford</h2></div></a>
+          <a class="news-item" data-category="club" data-date-group="Today" href="news-detail.html?story=thank-you-captain-white"><img src="assets/thank-you-captain-white.png" alt=""><div><p>Club News | 1 Jul 2028</p><h2>Thank you, Captain White</h2></div></a>
+          <a class="news-item" data-category="club" data-date-group="Today" href="news-detail.html?story=away-kit-citadel"><img src="assets/away-kit-citadel.png" alt=""><div><p>Club News | 22 Jul 2028</p><h2>Islington unveil 2028/29 away kit and announce Citadel partnership</h2></div></a>
+        <p class="news-date" data-date-label>Yesterday</p>
+        <div class="pager" aria-label="News pages"></div>
+      </div>
+    </section>
+    <footer><div class="tops-pattern" aria-label="TOPS brand pattern"><div class="tops-pattern-track"><span class="tops-pattern-item">TOPS <img src="assets/islington-hat-cream-transparent.webp" alt=""></span><span class="tops-pattern-item">TOPS <img src="assets/islington-hat-cream-transparent.webp" alt=""></span><span class="tops-pattern-item">TOPS <img src="assets/islington-hat-cream-transparent.webp" alt=""></span><span class="tops-pattern-item">TOPS <img src="assets/islington-hat-cream-transparent.webp" alt=""></span><span class="tops-pattern-item">TOPS <img src="assets/islington-hat-cream-transparent.webp" alt=""></span><span class="tops-pattern-item">TOPS <img src="assets/islington-hat-cream-transparent.webp" alt=""></span></div></div></footer>
+  </main>
+  <script>
+    const newsItems = [...document.querySelectorAll('.news-item')];
+    const filterTabs = [...document.querySelectorAll('.news-tabs a')];
+    const pager = document.querySelector('.pager');
+    const dateLabel = document.querySelector('[data-date-label]');
+    const pageSize = 8;
+    let currentPage = 1;
+    let activeFilter = 'all';
+    const renderNewsPage = () => {
+      const filteredItems = activeFilter === 'all' ? newsItems : newsItems.filter((item) => item.dataset.category === activeFilter);
+      const totalPages = Math.ceil(filteredItems.length / pageSize);
+      const firstIndex = (currentPage - 1) * pageSize;
+      const lastIndex = firstIndex + pageSize;
+      let showsYesterday = false;
+      newsItems.forEach((item) => {
+        const filteredIndex = filteredItems.indexOf(item);
+        const visible = filteredIndex >= firstIndex && filteredIndex < lastIndex;
+        item.classList.toggle('is-hidden', !visible);
+        if (visible && item.dataset.dateGroup === 'Yesterday') showsYesterday = true;
+      });
+      if (dateLabel) dateLabel.classList.toggle('is-hidden', !showsYesterday);
+      pager.innerHTML = '';
+      if (totalPages < 2) return;
+      Array.from({ length: totalPages }, (_, index) => index + 1).forEach((page) => {
+        const button = document.createElement('button');
+        button.type = 'button';
+        button.textContent = page;
+        button.className = page === currentPage ? 'active' : '';
+        button.setAttribute('aria-label', `Go to news page ${page}`);
+        button.addEventListener('click', () => {
+          currentPage = page;
+          renderNewsPage();
+        });
+        pager.appendChild(button);
+      });
+    };
+    filterTabs.forEach((tab) => {
+      tab.addEventListener('click', (event) => {
+        event.preventDefault();
+        activeFilter = tab.dataset.filter || 'all';
+        currentPage = 1;
+        filterTabs.forEach((item) => item.classList.toggle('active', item === tab));
+        renderNewsPage();
+      });
+    });
+    renderNewsPage();
+
+    const rail = document.querySelector('.rail');
+    const railLinks = [...document.querySelectorAll('.rail nav a')];
+    const submenu = document.querySelector('.rail-submenu');
+    const submenuKicker = document.querySelector('.rail-submenu-kicker');
+    const submenuList = document.querySelector('.rail-submenu-list');
+    let submenuCloseTimer;
+    const submenuItems = {
+      matches: ['Fixtures', 'Results', 'Tables', 'Match centre', 'Borough Cup'],
+      teams: [{ label: "Men's First Team", href: 'mens-first-team.html' }, { label: 'History Rankings', href: 'history-rankings.html' }, { label: 'Squad Finance', href: 'squad-finance.html' }, { label: 'Transfer History', href: 'transfer-history.html' }, { label: 'Predecessor Players', href: 'predecessor-players.html' }],
+      tickets: ['Home tickets', 'Away tickets', 'Premium', 'Season tickets', 'Ticket exchange'],
+      membership: ['Join TOPS', 'Renew membership', 'Member benefits', 'Ticket access', 'Account'],
+      shop: ['Home kit', 'Away kit', 'Training wear', 'Lifestyle', 'Accessories'],
+      play: ['Live stream', 'Highlights', 'Interviews', 'Documentaries', 'Archive'],
+      club: ['History', 'Stadium', 'Community', 'Foundation', 'Contact'],
+      explore: [{ label: 'News', href: 'news.html' }, 'Gallery', 'Video', 'Features', 'Visit N5']
+    };
+    const keepSubmenuOpen = () => clearTimeout(submenuCloseTimer);
+    const closeSubmenu = () => {
+      document.body.classList.remove('submenu-open');
+      submenu.setAttribute('aria-hidden', 'true');
+      railLinks.forEach((link) => link.classList.remove('is-submenu-active'));
+    };
+    const scheduleSubmenuClose = () => {
+      clearTimeout(submenuCloseTimer);
+      submenuCloseTimer = setTimeout(closeSubmenu, 120);
+    };
+    const openSubmenu = (link) => {
+      const key = link.dataset.menu;
+      if (!key || !submenuItems[key]) return;
+      keepSubmenuOpen();
+      submenuKicker.textContent = link.textContent.trim();
+      submenuList.innerHTML = submenuItems[key].map((item) => {
+        const label = typeof item === 'string' ? item : item.label;
+        const href = typeof item === 'string' ? '#' : item.href;
+        return `<li><a href="${href}">${label}</a></li>`;
+      }).join('');
+      railLinks.forEach((item) => item.classList.toggle('is-submenu-active', item === link));
+      submenu.setAttribute('aria-hidden', 'false');
+      document.body.classList.add('submenu-open');
+    };
+    railLinks.forEach((link) => {
+      link.addEventListener('mouseenter', () => openSubmenu(link));
+      link.addEventListener('focus', () => openSubmenu(link));
+    });
+    rail.addEventListener('mouseleave', scheduleSubmenuClose);
+    rail.addEventListener('mouseenter', keepSubmenuOpen);
+    submenu.addEventListener('mouseleave', scheduleSubmenuClose);
+    submenu.addEventListener('mouseenter', keepSubmenuOpen);
+  </script>
+</body>
+</html>

@@ -1,4 +1,4 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
@@ -6,7 +6,7 @@
   <title>Squad Finance | TOPS</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800;900&family=Libre+Caslon+Display&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700;900&family=Cinzel:wght@700;800;900&family=DM+Sans:wght@400;500;600;700;800;900&family=Libre+Caslon+Display&display=swap" rel="stylesheet">
   <style>
     :root{--ink:#071426;--navy:#101f3a;--burgundy:#6f1f2c;--warm:#f1ece2;--paper:#faf8f3;--line:#101f3a18;--gold:#c6a35b;--muted:#6e7f94}
     *{box-sizing:border-box}
@@ -18,14 +18,14 @@
     .rail nav{display:flex;flex-direction:column;gap:18px;padding:0 24px;color:var(--warm);font:700 22px/1.06 "Libre Caslon Display",Georgia,serif;letter-spacing:-.025em}
     .rail nav a:hover,.rail nav a.active{color:var(--gold)}
     .page{margin-left:200px;min-height:100vh}
-    .team-header{position:relative;min-height:300px;padding:56px 0 0;background:linear-gradient(90deg,rgba(2,9,54,.50),rgba(2,9,54,.10)),url('assets/first-team-header.webp') center/cover no-repeat;display:flex;flex-direction:column;justify-content:space-between}
+    .team-header{position:relative;min-height:284px;padding:56px 0 0;background:linear-gradient(90deg,rgba(2,9,54,.50),rgba(2,9,54,.10)),url('assets/first-team-header.webp') center/cover no-repeat;display:flex;flex-direction:column;justify-content:space-between}
     .team-header:before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(2,9,54,.08),rgba(2,9,54,.38));pointer-events:none}
-    .team-heading{position:relative;z-index:1;padding:0 clamp(28px,4vw,64px) 42px}
-    h1{font:italic 800 clamp(54px,6.8vw,108px)/.82 "Libre Caslon Display",Georgia,serif;margin:0;color:#f1ece2;letter-spacing:-.055em}
-    h1 span{display:block}
-    .tabs{--tab-radius:24px;position:relative;z-index:2;width:min(1280px,calc(100% - clamp(56px,10vw,160px)));margin:0 auto -34px;min-height:72px;background:#f8f5ee;border:1px solid #c6a35b70;border-bottom:0;border-radius:var(--tab-radius) var(--tab-radius) 0 0;display:grid;grid-template-columns:repeat(5,1fr);gap:6px;align-items:start;padding:8px;color:var(--navy);box-shadow:0 -1px 0 #ffffffb0 inset,0 -12px 28px #02093622}
-    .tabs a{height:54px;display:grid;place-items:center;border-radius:16px;border:1px solid transparent;font-size:12px;font-weight:900;text-transform:uppercase;letter-spacing:.15em;text-align:center;color:var(--navy);transition:background .22s ease,color .22s ease,border-color .22s ease,box-shadow .22s ease}
-    .tabs a:hover{border-color:#6f1f2c2e;background:#efe7dc;color:var(--burgundy)}.tabs a.active{background:var(--burgundy);border-color:#c6a35b80;color:#f8f5ee;box-shadow:0 12px 22px #101f3a24}
+    .team-heading{position:absolute;z-index:1;inset:0;display:flex;align-items:center;padding:0 clamp(28px,4vw,64px)}
+    h1{font:900 clamp(46px,6.2vw,96px)/.86 "Cinzel Decorative","Cinzel",serif;margin:0;color:#f1ece2;letter-spacing:.08em;white-space:nowrap;text-transform:uppercase}
+    h1 span{display:inline}
+    .tabs{--tab-radius:28px;position:absolute;left:50%;bottom:-34px;transform:translateX(-50%);z-index:2;width:min(1280px,calc(100% - clamp(56px,10vw,160px)));margin:0;min-height:76px;background:var(--warm);border:1px solid #c6a35b5c;border-radius:var(--tab-radius);display:grid;grid-template-columns:repeat(5,1fr);gap:8px;align-items:center;padding:8px;color:var(--navy);box-shadow:0 18px 34px #101f3a12}
+    .tabs a{height:58px;display:grid;place-items:center;border-radius:20px;border:1px solid transparent;font-family:"Cinzel",serif;font-size:12px;font-weight:900;text-transform:uppercase;letter-spacing:.14em;text-align:center;color:var(--navy);transition:background .22s ease,color .22s ease,border-color .22s ease,box-shadow .22s ease}
+    .tabs a:hover{border-color:#6f1f2c26;background:#efe7dc;color:var(--burgundy)}.tabs a.active{background:var(--burgundy);border-color:#c6a35b80;color:var(--warm);box-shadow:0 12px 22px #101f3a24}
     .finance{padding:88px clamp(24px,4vw,64px) 90px;background:linear-gradient(180deg,#f1ece2 0%,#f8f5ee 42%,#f1ece2 100%)}
     .overview{display:grid;grid-template-columns:repeat(4,minmax(160px,1fr));gap:14px;margin-bottom:22px}
     .overview-card{background:#fffaf2;border:1px solid var(--line);padding:18px 18px 16px;box-shadow:0 12px 28px #101f3a0c}
@@ -42,19 +42,19 @@
     td{padding:15px 16px;border-bottom:1px solid #101f3a12;font-size:14px;font-weight:800;vertical-align:middle}
     tbody tr:hover{background:#f7efe5}.rank{color:var(--burgundy);font-weight:900}.player-cell{display:flex;align-items:center;gap:10px}.player-cell a{font-size:16px;font-weight:900}.flag{width:23px;height:23px;border-radius:50%;background:#fff;border:1px solid #101f3a18;padding:3px;flex:0 0 auto}.flag img{display:block;width:100%;height:100%;object-fit:cover;border-radius:50%}
     .money{text-align:right;font-variant-numeric:tabular-nums}.weekly{color:var(--burgundy);font-weight:900}.muted{color:#6e7f94}
-    footer{background:#020936;color:#f1ece2;padding:74px 0 0;overflow:hidden}.tops-pattern{overflow:hidden}.tops-pattern-track{display:flex;align-items:center;gap:76px;width:max-content;animation:topsMarquee 24s linear infinite}.tops-pattern-item{display:flex;align-items:center;gap:.16em;white-space:nowrap;color:#f1ece2;font:italic clamp(128px,13.8vw,228px)/.78 Georgia,serif;letter-spacing:-.065em;text-transform:uppercase}.tops-pattern-item img{width:.86em;height:.86em;object-fit:contain;display:block;transform:translateY(-.015em)}@keyframes topsMarquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
-    @media(max-width:1100px){.overview{grid-template-columns:repeat(2,1fr)}.toolbar{grid-template-columns:1fr}.finance-search,.field select{width:100%;min-width:0}}@media(max-width:760px){.rail{display:none}.page{margin-left:0}.tabs{width:calc(100% - 24px);grid-template-columns:repeat(2,1fr);border-radius:24px 24px 0 0}.finance{padding:70px 12px}.overview{grid-template-columns:1fr}.toolbar{padding:22px}}
+    footer{height:300px;background:#020936;color:#f1ece2;overflow:hidden;display:flex;align-items:center}.tops-pattern{width:100%;overflow:hidden}.tops-pattern-track{display:flex;align-items:center;gap:76px;width:max-content;animation:topsMarquee 24s linear infinite}.tops-pattern-item{display:flex;align-items:center;gap:.16em;white-space:nowrap;color:#f1ece2;font:italic clamp(128px,13.8vw,228px)/.78 Georgia,serif;letter-spacing:-.065em;text-transform:uppercase}.tops-pattern-item img{width:.86em;height:.86em;object-fit:contain;display:block;transform:translateY(-.015em)}@keyframes topsMarquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+    @media(max-width:1100px){.overview{grid-template-columns:repeat(2,1fr)}.toolbar{grid-template-columns:1fr}.finance-search,.field select{width:100%;min-width:0}}@media(max-width:760px){.rail{display:none}.page{margin-left:0}.tabs{width:calc(100% - 24px);grid-template-columns:repeat(2,1fr);border-radius:24px}.finance{padding:70px 12px}.overview{grid-template-columns:1fr}.toolbar{padding:22px}}
   </style>
 </head>
 <body>
-  <aside class="rail"><a class="rail-brand" href="index.html#top" aria-label="TOPS home"><span class="tops-wordmark"><img src="assets/sidebar-sculpture-logo.webp" alt="TOPS"></span></a><nav><a href="index.html#fixtures">Matches</a><a class="active" href="mens-first-team.html">Teams</a><a href="index.html#tickets">Tickets</a><a href="index.html#membership">Membership</a><a href="index.html#shop">Shop IFC</a><a href="index.html#play">IFC PLAY</a><a href="index.html#club">The Club</a><a href="index.html#latest">Explore</a></nav></aside>
+  <aside class="rail"><a class="rail-brand" href="index.html#top" aria-label="TOPS home"><span class="tops-wordmark"><img src="assets/sidebar-sculpture-logo.webp" alt="TOPS"></span></a><nav><a href="news.html">News</a><a href="index.html#fixtures">Matches</a><a class="active" href="mens-first-team.html">Teams</a><a href="index.html#tickets">Tickets</a><a href="index.html#membership">Membership</a><a href="index.html#shop">Shop IFC</a><a href="index.html#play">IFC PLAY</a><a href="index.html#club">The Club</a><a href="index.html#latest">Explore</a></nav></aside>
   <main class="page">
-    <header class="team-header"><div class="team-heading"><h1><span>SQUAD</span><span>FINANCE</span></h1></div><nav class="tabs"><a href="mens-first-team.html#squad">Squad</a><a href="history-rankings.html">History Rankings</a><a class="active" href="squad-finance.html">Finance</a><a href="transfer-history.html">Transfers</a><a href="predecessor-players.html">Predecessor</a></nav></header>
+    <header class="team-header"><div class="team-heading"><h1>FINANCE</h1></div><nav class="tabs"><a href="mens-first-team.html">Squad</a><a href="history-rankings.html">History Rankings</a><a class="active" href="squad-finance.html">Finance</a><a href="transfer-history.html">Transfers</a><a href="predecessor-players.html">Predecessor</a></nav></header>
     <section class="finance">
       <div class="overview" data-overview></div>
       <div class="toolbar">
         <div><p>First Team Payroll</p><h2>Weekly wages, annual salary and market value</h2></div>
-        <label class="field"><span>Season</span><select data-season></select></label>
+        <label class="field"><span>Date</span><select data-date></select></label>
         <input class="finance-search" type="search" placeholder="Search player or position" data-search>
       </div>
       <div class="table-shell">
@@ -76,7 +76,7 @@
     const transferData = window.TOPS_TRANSFER_DATA || { windows: [] };
     const table = document.querySelector('[data-table]');
     const search = document.querySelector('[data-search]');
-    const seasonSelect = document.querySelector('[data-season]');
+    const dateSelect = document.querySelector('[data-date]');
     const overview = document.querySelector('[data-overview]');
     const moneyValue = (value) => Number(String(value || "").replace(/[^0-9.]/g, "")) || 0;
     const weeklyValue = (player) => moneyValue(player.weeklyWage);
@@ -86,32 +86,55 @@
     const displayMoney = (value) => String(value || "").replace(/EUR/g, "&euro;");
     const roundHalfMillion = (value) => Math.round(value * 2) / 2;
     const annualFromWeekly = (weekly) => weekly ? `&euro;${roundHalfMillion(moneyValue(weekly) * 52 / 1000000).toFixed(1)}M` : "";
-    const currentRows = () => currentPlayers.filter((player) => player.weeklyWage).map((player) => ({ ...player, source: "Current squad" }));
-    const rowsForSeason = (season) => {
-      if (season === "2028/29") return currentRows();
-      return transferData.windows
-        .filter((windowItem) => windowItem.season === season)
-        .flatMap((windowItem) => [...(windowItem.arrivals || []), ...(windowItem.academyPromotions || [])])
-        .filter((entry) => entry.weeklyWage)
-        .map((entry) => {
-          const player = playerIndex.get(entry.playerId) || {};
-          return {
-            id: entry.playerId,
-            name: player.name || entry.player,
-            flag: player.flag || "",
-            nationality: player.nationality || "",
-            specificPosition: player.specificPosition || player.positionShort || "",
-            position: player.position || "",
-            age: player.age || "",
-            weeklyWage: displayMoney(entry.weeklyWage),
-            annualSalary: annualFromWeekly(entry.weeklyWage),
-            marketValue: "",
-            source: `${windowItem.season} ${windowItem.window}`
-          };
-        });
+    const winterArrivalIds = new Set(["enzo-fernandez", "josh-king", "james-trafford"]);
+    const preWinterWageOverrides = {
+      "riccardo-calafiori": { weeklyWage: "EUR130,000", annualSalary: "EUR7.0m" },
+      "alex-baena": { weeklyWage: "EUR140,000", annualSalary: "EUR7.5m" },
+      "nico-paz": { weeklyWage: "EUR90,000", annualSalary: "EUR4.5m" },
+      "lucas-bergvall": { weeklyWage: "EUR70,000", annualSalary: "EUR3.5m" },
+      "marcel-ruiz": { weeklyWage: "EUR70,000", annualSalary: "EUR3.5m" }
     };
-    const seasons = ["2028/29", ...new Set(transferData.windows.map((windowItem) => windowItem.season).filter((season) => season !== "2028/29"))].sort().reverse();
-    seasonSelect.innerHTML = seasons.map((season) => `<option value="${season}">${season}</option>`).join("");
+    const preWinterDepartures = [
+      {
+        id: "martin-zubimendi",
+        name: "Martin Zubimendi",
+        flag: "assets/es_1x1.svg",
+        nationality: "Spain",
+        specificPosition: "CDM",
+        position: "Midfielder",
+        age: "29",
+        weeklyWage: "EUR195,000",
+        annualSalary: "EUR10.0m",
+        marketValue: "EUR100.0m",
+        source: "9/1/2028 squad"
+      },
+      {
+        id: "jose-carmona",
+        name: "Jose Carmona",
+        flag: "assets/es_1x1.svg",
+        nationality: "Spain",
+        specificPosition: "RB",
+        position: "Defender",
+        age: "26",
+        weeklyWage: "EUR80,000",
+        annualSalary: "EUR4.0m",
+        marketValue: "EUR37.0m",
+        source: "9/1/2028 squad"
+      }
+    ];
+    const currentSnapshotRows = () => currentPlayers.filter((player) => player.weeklyWage).map((player) => ({ ...player, source: "Current squad" }));
+    const preWinterSnapshotRows = () => [
+      ...currentPlayers
+        .filter((player) => player.weeklyWage && !winterArrivalIds.has(player.id))
+        .map((player) => ({ ...player, ...(preWinterWageOverrides[player.id] || {}), source: "9/1/2028 squad" })),
+      ...preWinterDepartures
+    ];
+    const snapshots = [
+      { date: "1/31/2029", rows: currentSnapshotRows },
+      { date: "9/1/2028", rows: preWinterSnapshotRows }
+    ];
+    dateSelect.innerHTML = snapshots.map((snapshot) => `<option value="${snapshot.date}">${snapshot.date}</option>`).join("");
+    const rowsForDate = (date) => snapshots.find((snapshot) => snapshot.date === date)?.rows() || [];
     const row = (player, index) => `
       <tr data-search-text="${`${player.name} ${player.specificPosition} ${player.position}`.toLowerCase()}">
         <td class="rank">${index + 1}</td>
@@ -124,7 +147,7 @@
       </tr>
     `;
     const render = () => {
-      const ordered = rowsForSeason(seasonSelect.value).sort((a, b) => weeklyValue(b) - weeklyValue(a) || a.name.localeCompare(b.name));
+      const ordered = rowsForDate(dateSelect.value).sort((a, b) => weeklyValue(b) - weeklyValue(a) || a.name.localeCompare(b.name));
       const totals = ordered.reduce((sum, player) => ({
         weekly: sum.weekly + weeklyValue(player),
         annual: sum.annual + annualValue(player),
@@ -144,7 +167,7 @@
       [...table.querySelectorAll('tr')].forEach((item) => item.hidden = query && !item.dataset.searchText.includes(query));
     };
     search.addEventListener('input', applySearch);
-    seasonSelect.addEventListener('change', render);
+    dateSelect.addEventListener('change', render);
     render();
   </script>
 </body>
